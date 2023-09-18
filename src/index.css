@@ -2,15 +2,15 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 .bar {
@@ -20,14 +20,9 @@ code {
   align-items: center;
   height: 5vh;
   position: relative;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   z-index: 50;
   background-color: rgba(198, 192, 233, 0.151);
-  
- 
-  
-
-
 }
 .banner {
   margin-right: auto;
@@ -35,7 +30,6 @@ code {
   font-weight: bold;
   width: 40%;
   color: rgb(61, 29, 61);
-  
 }
 .links {
   text-decoration: none;
@@ -45,7 +39,7 @@ code {
   transition: 0.3s ease-in-out;
   padding: 9px;
 }
-.links:hover{
+.links:hover {
   border-radius: 25px;
   background-color: rgb(145, 186, 214);
 }
@@ -59,41 +53,35 @@ code {
 .search {
   margin-right: 10px;
 }
-.burger{
+.burger {
   display: none;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   #nav {
     width: 45%;
   }
-  
 }
-@media screen and (max-width:750px){
+@media screen and (max-width: 750px) {
   #nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
     align-items: flex-end;
     position: fixed;
-    top:11vh;
+    top: 11vh;
     right: 0px;
     height: 30%;
     transform: translateX(100%);
     z-index: 100;
-    
-    
   }
-  .links{
+  .links {
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: rgba(128, 0, 128, 0.2);
     border-radius: 25px;
     color: white;
-
-    
-
   }
   .burger {
     display: block;
@@ -102,8 +90,7 @@ code {
   .store {
     margin-right: 15px;
   }
-  #nav.active{
+  #nav.active {
     transform: translateX(0%);
-    
   }
 }
