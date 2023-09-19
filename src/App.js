@@ -6,10 +6,11 @@ import About from "./pages/About";
 function App() {
   return (
     <BrowserRouter>
-      <Shared></Shared>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />}></Route>
+        <Route path="/" element={<Shared />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />}></Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   );
