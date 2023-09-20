@@ -134,8 +134,7 @@
   align-items: center;
   color: #5177b8;
   padding: 20px;
-
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .home a:hover {
   color: #91a6ff;

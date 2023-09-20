@@ -23,7 +23,7 @@ const NavBar = () => {
           SERVICES
         </NavLink>
         <NavLink
-          to="/projects"
+          to="/project"
           className="links"
           onClick={() => setClick(false)}
         >
