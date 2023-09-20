@@ -39,7 +39,7 @@ const NavBar = () => {
       </nav>
 
       <div
-        className="burger"
+        className="burger e"
         onClick={() => {
           setClick(!clicked);
         }}
