@@ -7,14 +7,13 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* overflow-x: hidden; */
 }
 
 .bar {
   display: flex;
   flex-direction: row;
   position: relative;
-  padding: 30px;
+  padding: 50px;
   align-items: center;
   height: 7vh;
   height: 6vh;
@@ -40,14 +39,15 @@
   position: relative;
   color: black;
   letter-spacing: 1px;
-  font-weight: bold;
-  transition: 0.3s ease-in-out;
+  font-weight: 600;
+
   padding: 15px;
+  border-bottom: 0px solid rgb(145, 186, 214);
 }
 
 .links:hover {
-  border-radius: 15px;
-  background-color: rgb(145, 186, 214);
+  border-bottom: 2px solid rgb(145, 186, 214);
+  font-weight: 700;
 }
 #nav {
   display: flex;
@@ -193,6 +193,51 @@
   text-wrap: wrap;
   font-size: 18px;
   font-weight: 400;
+}
+.serviceList {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 40px auto;
+}
+.serviceList h1 {
+  font-weight: 600;
+  text-align: left;
+}
+.serviceList h1::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20%;
+  margin: 20px 0px;
+
+  background-color: blue;
+}
+.serviceSection {
+  padding: 20px;
+  border: 1px solid blue;
+  position: relative;
+}
+.serviceSection .button {
+  cursor: pointer;
+  text-align: center;
+}
+.serviceSection .button button {
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #5177b8;
+}
+.serviceType {
+  display: flex;
+  width: 100%;
+}
+.serviceInfo {
+  width: 20%;
+}
+.serviceExplanation {
+  width: 80%;
+
+  padding: 10px;
 }
 
 .footer {
