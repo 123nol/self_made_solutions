@@ -322,9 +322,9 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 200px;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 80px;
   padding-bottom: 30px;
 }
 .prolists {
@@ -340,8 +340,8 @@
   width: 95%;
   display: flex;
   flex-direction: row;
-  height: 40vh;
-  background-color: rgb(54, 110, 110);
+  height: 55vh;
+  background: linear-gradient(to top, rgba(255,0,0,0), rgb(238, 215, 11));
   object-fit: cover;
   border-radius: 30px;
 }
@@ -362,7 +362,7 @@
 }
 @media screen and (max-width: 900px) {
   .prolist {
-    background-color: rgb(54, 110, 110);
+    background-color:linear-gradient(to top, rgba(255,0,0,0), rgb(238, 215, 11));
     flex-direction: column !important;
     height: 70vh;
   }
@@ -376,7 +376,7 @@
 }
 @media screen and (max-width: 500px) {
   .prolist {
-    background-color: rgb(54, 110, 110);
+    background-color: linear-gradient(to top, rgba(255,0,0,0), rgb(238, 215, 11));
     flex-direction: column !important;
     height: 70vh;
   }
