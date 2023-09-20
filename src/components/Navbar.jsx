@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
   const [clicked, setClick] = useState(false);
@@ -32,7 +32,7 @@ const NavBar = () => {
           setClick(!clicked);
         }}
       >
-        <FaBars />
+        {clicked ? <FaTimes /> : <FaBars />}
       </div>
     </div>
   );
