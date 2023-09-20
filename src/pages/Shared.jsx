@@ -1,13 +1,13 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
-import NavBar from "../components/NavBar.jsx";
+import React from 'react'
+import {Outlet} from "react-router-dom"
+import NavBar from '../components/NavBar'
 const Shared = () => {
   return (
     <>
-      <NavBar />
-      <Outlet />
+      <NavBar/>
+      <Outlet/>
     </>
   );
-};
+}
 
-export default Shared;
+export default Shared
