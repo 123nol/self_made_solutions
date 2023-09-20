@@ -18,7 +18,7 @@
   height: 7vh;
   height: 6vh;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgba(198, 192, 233, 0.151);
+  background-color: rgba(255, 231, 17,0.09);
   transition: all 0.5s ease-in-out;
   z-index: 100;
 }
@@ -328,9 +328,7 @@
   padding-bottom: 30px;
 }
 .prolists {
-  background-image: url("https://img.freepik.com/free-vector/digital-wireframe-background_1017-8201.jpg?w=2000");
-  background-repeat: repeat;
-  background-size: contain;
+  background-color: rgba(255, 231, 17,0.09);
 }
 .linkheader {
   margin-bottom: 45px;
@@ -341,7 +339,7 @@
   display: flex;
   flex-direction: row;
   height: 55vh;
-  background: linear-gradient(to top, rgba(255,0,0,0), rgb(238, 215, 11));
+  background: linear-gradient(to top, rgba(255,0,0,0), rgb(192, 212, 120));
   object-fit: cover;
   border-radius: 30px;
 }
@@ -436,7 +434,7 @@
   gap: 30px;
   justify-content: center;
   margin-top: 50px;
-  background-color: rgba(198, 192, 233, 0.151);
+  background-color: rgba(255, 231, 17,0.09);
   margin-bottom: 50px;
   padding: 15px;
   border-radius: 10px;
