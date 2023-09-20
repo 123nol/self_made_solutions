@@ -2,7 +2,12 @@ const About = () => {
   return (
     <div>
       <h1>About</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda nesciunt quo dolorem sit porro, quasi, placeat sequi eos repudiandae nemo eveniet ipsum laborum dignissimos a rem culpa voluptate magnam cupiditate.</p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+        nesciunt quo dolorem sit porro, quasi, placeat sequi eos repudiandae
+        nemo eveniet ipsum laborum dignissimos a rem culpa voluptate magnam
+        cupiditate.
+      </p>
     </div>
   );
 };

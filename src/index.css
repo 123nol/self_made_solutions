@@ -183,39 +183,6 @@
   font-weight: 400;
 }
 
-.wrapContainer {
-  width: 50%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-.wrapContainer .serviceList {
-  margin: 2px 4px;
-  width: 50/3%;
-}
-.wrapContainer img {
-  width: 15vw;
-}
-.wrapContainer .image {
-  position: relative;
-  overflow: hidden;
-}
-.wrapContainer .imageInfo {
-  visibility: hidden;
-  position: absolute;
-  color: white;
-  background-color: black;
-  bottom: 0px;
-  width: 100%;
-  transform: translateY(100%);
-  transition: 1s;
-}
-.wrapContainer .image:hover .imageInfo {
-  transform: translateY(0);
-  visibility: visible;
-}
-@media screen and (max-width: 900px) {
-}
 .footer {
   width: 100%;
   background-color: #5177b8;
