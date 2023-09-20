@@ -1,39 +1,27 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import { FaBars, FaArrowUp } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 const NavBar = () => {
   const [clicked, setClick] = useState(false);
 
   return (
-    <div className={clicked ? "bar extend" : "bar"}>
-      <h1 className="banner">Self Made Solutions</h1>
+    <div className="bar">
+      <div className="banner">Self Made Solutions</div>
       <nav id="nav" className={clicked ? "#nav active" : "#nav"}>
-        <NavLink to="/" className="links" onClick={() => setClick(false)}>
+        <NavLink to="/" className="links">
           HOME
         </NavLink>
-        <NavLink to="/about" className="links" onClick={() => setClick(false)}>
+        <NavLink to="/about" className="links">
           ABOUT
         </NavLink>
-        <NavLink
-          to="/services"
-          className="links"
-          onClick={() => setClick(false)}
-        >
+        <NavLink to="/services" className="links">
           SERVICES
         </NavLink>
-        <NavLink
-          to="/project"
-          className="links"
-          onClick={() => setClick(false)}
-        >
+        <NavLink to="/projects" className="links">
           PROJECTS
         </NavLink>
-        <NavLink
-          to="/contact"
-          className="links"
-          onClick={() => setClick(false)}
-        >
+        <NavLink to="/contact" className="links">
           CONTACT
         </NavLink>
       </nav>
@@ -44,7 +32,7 @@ const NavBar = () => {
           setClick(!clicked);
         }}
       >
-        {clicked ? <FaArrowUp /> : <FaBars />}
+        <FaBars />
       </div>
     </div>
   );
