@@ -141,8 +141,8 @@
 }
 .prolists{
   background-image: url("https://img.freepik.com/free-vector/digital-wireframe-background_1017-8201.jpg?w=2000");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
 }
 .linkheader{
   margin-bottom: 45px;
