@@ -6,6 +6,7 @@ const NavBar = () => {
   const [clicked, setClick] = useState(false);
 
   return (
+    <div className={clicked ? "bar extend" : "bar"}>
       <div className="banner">Self Made Solutions</div>
       <nav id="nav" className={clicked ? "#nav active" : "#nav"}>
         <NavLink to="/" className="links" onClick={() => setClick(false)}>
@@ -22,6 +23,7 @@ const NavBar = () => {
           SERVICES
         </NavLink>
         <NavLink
+          to="/project"
           className="links"
           onClick={() => setClick(false)}
         >
