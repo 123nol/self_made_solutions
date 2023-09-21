@@ -373,7 +373,7 @@
   width: 95%;
   display: flex;
   flex-direction: row;
-  height: 55vh;
+  height: 50vh;
   background: linear-gradient(to top, rgba(255,0,0,0), rgb(192, 212, 120));
   object-fit: cover;
   border-radius: 30px;
