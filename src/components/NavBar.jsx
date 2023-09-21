@@ -1,13 +1,15 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+// import Logo from "./images/Logo.png";
 const NavBar = () => {
   const [clicked, setClick] = useState(false);
 
   return (
     <div className={clicked ? "bar extend" : "bar"}>
-      <div className="banner">Self Made Solutions</div>
+      <div className="banner">
+        {/* <img src={Logo} /> */}Self Made Solutions
+      </div>
       <nav id="nav" className={clicked ? "#nav active" : "#nav"}>
         <NavLink to="/" className="links" onClick={() => setClick(false)}>
           HOME
