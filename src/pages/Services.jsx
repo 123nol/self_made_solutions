@@ -29,7 +29,7 @@ const Services = () => {
             </div>
           </div>
           <div className="button">
-            <button>Sign Up</button>
+            <button>Sign Up for an ERP Service</button>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ const Services = () => {
             </div>
           </div>
           <div className="button">
-            <button>Book Now</button>
+            <button>Book a Consultation</button>
           </div>
         </div>
       </div>
