@@ -23,23 +23,45 @@ const Footer = () => {
           <p>
             <li>
               <AiOutlineRight />
-              <Link to ="/" style={{textDecoration:"none",color:"white"}}>Home</Link>
+              <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+                Home
+              </Link>
             </li>
             <li>
               <AiOutlineRight />
-              <Link to ="/about"style={{textDecoration:"none",color:"white"}}>About</Link>
+              <Link
+                to="/about"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                About
+              </Link>
             </li>
             <li>
               <AiOutlineRight />
-              <Link to ="/services"style={{textDecoration:"none",color:"white"}}>Services</Link>
+              <Link
+                to="/services"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Services
+              </Link>
             </li>
             <li>
               <AiOutlineRight />
-              <Link to ="/project"style={{textDecoration:"none",color:"white"}}>Projects</Link>
+              <Link
+                to="/project"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Projects
+              </Link>
             </li>
             <li>
               <AiOutlineRight />
-              <Link to ="/contact"style={{textDecoration:"none",color:"white"}}>Contact</Link>
+              <Link
+                to="/contact"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Contact
+              </Link>
             </li>
           </p>
         </div>
