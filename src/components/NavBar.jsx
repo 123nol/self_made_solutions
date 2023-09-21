@@ -14,9 +14,9 @@ const NavBar = () => {
         <NavLink to="/" className="links" onClick={() => setClick(false)}>
           HOME
         </NavLink>
-        <NavLink to="/about" className="links" onClick={() => setClick(false)}>
+        {/* <NavLink to="/about" className="links" onClick={() => setClick(false)}>
           ABOUT
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to="/services"
           className="links"
