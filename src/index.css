@@ -50,10 +50,9 @@
   transition: all 0.5s ease-in-out;
   font-weight: 700;
 }
-
-.links:hover::after {
+.links::after {
   content: "";
-  width: 40%;
+  width: 0% !important;
   display: inline-block;
   height: 3px;
   border-radius: 90px !important;
@@ -63,8 +62,9 @@
   left: 14px;
   transition: all 0.3s ease-in-out !important;
 }
-.links::after {
-  transition: all 0.3s ease-in-out !important;
+
+.links:hover::after {
+  width: 40% !important;
 }
 
 #nav {
