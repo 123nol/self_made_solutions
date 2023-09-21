@@ -262,8 +262,8 @@
 }
 .serviceSection .button button:hover {
   cursor: pointer;
-  box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.2),
-    0 10px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.2),
+    0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .serviceType {
   display: flex;
@@ -366,8 +366,8 @@
 
 .productCard:hover {
   cursor: pointer;
-  box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.2),
-    0 10px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.2),
+    0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 900px) {
   .productList {
