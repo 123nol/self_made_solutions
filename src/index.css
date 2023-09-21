@@ -45,10 +45,6 @@
   border-bottom: 0px solid rgb(145, 186, 214);
 }
 
-.links:hover {
-  border-bottom: 2px solid rgb(145, 186, 214);
-  font-weight: 700;
-}
 #nav {
   display: flex;
   justify-content: space-around;
@@ -215,8 +211,9 @@
 }
 .serviceSection {
   padding: 20px;
-  border: 1px solid blue;
+  border-radius: 10px;
   position: relative;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .serviceSection .button {
   cursor: pointer;
@@ -238,6 +235,17 @@
   width: 80%;
 
   padding: 10px;
+}
+@media screen and (max-width: 900px) {
+  .serviceType {
+    flex-direction: column;
+  }
+  .serviceInfo {
+    width: 100%;
+  }
+  .serviceExplanation {
+    width: 100%;
+  }
 }
 
 .footer {
