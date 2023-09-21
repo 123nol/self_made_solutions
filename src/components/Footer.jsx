@@ -1,6 +1,7 @@
 import { FaEnvelope } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer">
@@ -22,23 +23,23 @@ const Footer = () => {
           <p>
             <li>
               <AiOutlineRight />
-              Home
+              <Link to ="/" style={{textDecoration:"none",color:"white"}}>Home</Link>
             </li>
             <li>
               <AiOutlineRight />
-              About
+              <Link to ="/about"style={{textDecoration:"none",color:"white"}}>About</Link>
             </li>
             <li>
               <AiOutlineRight />
-              Services
+              <Link to ="/services"style={{textDecoration:"none",color:"white"}}>Services</Link>
             </li>
             <li>
               <AiOutlineRight />
-              Projects
+              <Link to ="/project"style={{textDecoration:"none",color:"white"}}>Projects</Link>
             </li>
             <li>
               <AiOutlineRight />
-              Contact
+              <Link to ="/contact"style={{textDecoration:"none",color:"white"}}>Contact</Link>
             </li>
           </p>
         </div>

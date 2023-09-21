@@ -46,7 +46,25 @@
   font-weight: 600;
 
   padding: 15px;
-  border-bottom: 0px solid #c3c473;
+  border-bottom: 0px solid rgb(145, 186, 214);
+  transition: all 0.5s ease-in-out;
+  font-weight: 700;
+}
+
+.links:hover::after {
+  content: "";
+  width: 40%;
+  display: inline-block;
+  height: 3px;
+  border-radius: 90px !important;
+  background-color: black;
+  position: absolute;
+  bottom: 6px;
+  left: 14px;
+  transition: all 0.3s ease-in-out !important;
+}
+.links::after {
+  transition: all 0.3s ease-in-out !important;
 }
 
 #nav {
@@ -96,6 +114,19 @@
   }
   #nav.active {
     transform: translateY(0%);
+  }
+  .links:hover::after {
+    content: "";
+    width: 7%;
+    display: inline-block;
+    height: 3px;
+    border-radius: 25%;
+    background-color: black;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 .home {
@@ -342,13 +373,13 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 200px;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 80px;
   padding-bottom: 30px;
 }
 .prolists {
-  background-image: url("https://img.freepik.com/free-vector/digital-wireframe-background_1017-8201.jpg?w=2000");
+  background: url("https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png");
   background-repeat: repeat;
   background-size: contain;
 }
@@ -360,10 +391,12 @@
   width: 95%;
   display: flex;
   flex-direction: row;
-  height: 40vh;
-  background-color: rgb(54, 110, 110);
+  height: 50vh;
+  background: linear-gradient(to top, rgba(255, 0, 0, 0), rgb(192, 212, 120));
   object-fit: cover;
   border-radius: 30px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .listinfo {
   display: flex;
@@ -374,6 +407,7 @@
   gap: 20px;
   width: 50%;
 }
+
 .prolist img {
   object-fit: cover;
 
@@ -382,7 +416,11 @@
 }
 @media screen and (max-width: 900px) {
   .prolist {
-    background-color: rgb(54, 110, 110);
+    background-color: linear-gradient(
+      to top,
+      rgba(255, 0, 0, 0),
+      rgb(238, 215, 11)
+    );
     flex-direction: column !important;
     height: 70vh;
   }
@@ -396,7 +434,11 @@
 }
 @media screen and (max-width: 500px) {
   .prolist {
-    background-color: rgb(54, 110, 110);
+    background-color: linear-gradient(
+      to top,
+      rgba(255, 0, 0, 0),
+      rgb(238, 215, 11)
+    );
     flex-direction: column !important;
     height: 70vh;
   }
@@ -456,7 +498,7 @@
   gap: 30px;
   justify-content: center;
   margin-top: 50px;
-  background-color: rgba(198, 192, 233, 0.151);
+  background-color: rgba(255, 231, 17, 0.09);
   margin-bottom: 50px;
   padding: 15px;
   border-radius: 10px;
