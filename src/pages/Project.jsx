@@ -27,7 +27,7 @@ const Project = () => {
           <img src="https://media.licdn.com/dms/image/C4E03AQHxPgnirbsjyQ/profile-displayphoto-shrink_800_800/0/1643712211302?e=2147483647&v=beta&t=WU5PUwXXSJvbTcgd5b_so04wLtBU0NDJJkpELUlV7PE" alt="nebret"/>
           <div className='listinfo'>
             <h2>Nebret Property Management - Brand Logo</h2>
-            <p>As part of a new web application development and brand creation, we took up the task of developing the initial brand logo of the multi-deciplinary property management firm, Nebret Property Management. We had a number of detailed analysis on what the Client wanted, what the future of the firm is imagined to look like and the most rooted use cases the brand appears and the logo follows. Based on that we developed a type-heavy logo with a few nicks to showcae the firm's market positions and visions.</p>
+            <p style={{fontWeight: "50px"}}>As part of a new web application development and brand creation, we took up the task of developing the initial brand logo of the multi-deciplinary property management firm, Nebret Property Management. We had a number of detailed analysis on what the Client wanted, what the future of the firm is imagined to look like and the most rooted use cases the brand appears and the logo follows. Based on that we developed a type-heavy logo with a few nicks to showcae the firm's market positions and visions.</p>
 
           </div>
         </div>
