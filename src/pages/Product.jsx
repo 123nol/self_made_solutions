@@ -1,7 +1,5 @@
+import { Link } from "react-router-dom";
 const Product = () => {
-  const redirect = () => {
-    window.location.href = "https:youtube.com/";
-  };
   return (
     <div className="products">
       <div className="linkHeader">
@@ -9,77 +7,95 @@ const Product = () => {
         <p>Some of the Products that we have worked on</p>
       </div>
       <div className="productList">
-        <div className="productCard" onClick={redirect}>
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-            voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-            soluta eligendi temporibus consectetur ipsum praesentium quas
-            architecto nulla, harum quos distinctio corrupti.
-          </div>
+        <div className="productCard">
+          <Link className="redirectLink">
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
+              soluta eligendi temporibus consectetur ipsum praesentium quas
+              architecto nulla, harum quos distinctio corrupti.
+            </div>
+          </Link>
         </div>
         <div className="productCard">
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-            voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-            soluta eligendi temporibus consectetur ipsum praesentium quas
-            architecto nulla, harum quos distinctio corrupti.
-          </div>
+          <Link className="redirectLink">
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
+              soluta eligendi temporibus consectetur ipsum praesentium quas
+              architecto nulla, harum quos distinctio corrupti.
+            </div>
+          </Link>
         </div>
         <div className="productCard">
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-            voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-            soluta eligendi temporibus consectetur ipsum praesentium quas
-            architecto nulla, harum quos distinctio corrupti.
-          </div>
+          <Link className="redirectLink">
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
+              soluta eligendi temporibus consectetur ipsum praesentium quas
+              architecto nulla, harum quos distinctio corrupti.
+            </div>
+          </Link>
         </div>
         <div className="productCard">
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-            voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-            soluta eligendi temporibus consectetur ipsum praesentium quas
-            architecto nulla, harum quos distinctio corrupti.
-          </div>
+          <Link className="redirectLink">
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
+              soluta eligendi temporibus consectetur ipsum praesentium quas
+              architecto nulla, harum quos distinctio corrupti.
+            </div>
+          </Link>
         </div>
         <div className="productCard">
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-            voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-            soluta eligendi temporibus consectetur ipsum praesentium quas
-            architecto nulla, harum quos distinctio corrupti.
-          </div>
+          <Link className="redirectLink">
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
+              soluta eligendi temporibus consectetur ipsum praesentium quas
+              architecto nulla, harum quos distinctio corrupti.
+            </div>
+          </Link>
         </div>
         <div className="productCard">
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-            voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-            soluta eligendi temporibus consectetur ipsum praesentium quas
-            architecto nulla, harum quos distinctio corrupti.
-          </div>
+          <Link className="redirectLink">
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
+              soluta eligendi temporibus consectetur ipsum praesentium quas
+              architecto nulla, harum quos distinctio corrupti.
+            </div>
+          </Link>
         </div>
         <div className="productCard">
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-            voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-            soluta eligendi temporibus consectetur ipsum praesentium quas
-            architecto nulla, harum quos distinctio corrupti.
-          </div>
+          <Link className="redirectLink">
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
+              soluta eligendi temporibus consectetur ipsum praesentium quas
+              architecto nulla, harum quos distinctio corrupti.
+            </div>
+          </Link>
         </div>
         <div className="productCard">
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-            voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-            soluta eligendi temporibus consectetur ipsum praesentium quas
-            architecto nulla, harum quos distinctio corrupti.
-          </div>
+          <Link className="redirectLink">
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
+              soluta eligendi temporibus consectetur ipsum praesentium quas
+              architecto nulla, harum quos distinctio corrupti.
+            </div>
+          </Link>
         </div>
         <div className="productCard">
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-            voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-            soluta eligendi temporibus consectetur ipsum praesentium quas
-            architecto nulla, harum quos distinctio corrupti.
-          </div>
+          <Link className="redirectLink">
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
+              soluta eligendi temporibus consectetur ipsum praesentium quas
+              architecto nulla, harum quos distinctio corrupti.
+            </div>
+          </Link>
         </div>
       </div>
     </div>
