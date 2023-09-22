@@ -426,7 +426,7 @@
   padding-bottom: 30px;
 }
 .prolists {
-  background: url("https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png");
+  background: url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
   background-repeat: repeat;
   background-size: contain;
 }
@@ -435,15 +435,18 @@
   display: block;
 }
 .prolist {
+
   width: 95%;
   display: flex;
   flex-direction: row;
   height: 50vh;
-  background: linear-gradient(to top, rgba(255, 0, 0, 0), rgb(192, 212, 120));
+ 
   object-fit: cover;
-  border-radius: 30px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px !important;
+  box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+
 }
 .listinfo {
   display: flex;
@@ -457,9 +460,9 @@
 
 .prolist img {
   object-fit: cover;
-
   width: 50%;
-  border-radius: 30px;
+  border-radius: 0 0 / 30px 30px;
+  
 }
 @media screen and (max-width: 900px) {
   .prolist {
@@ -467,7 +470,7 @@
       to top,
       rgba(255, 0, 0, 0),
       rgb(238, 215, 11)
-    );
+    )!important ;
     flex-direction: column !important;
     height: 70vh;
   }
@@ -482,10 +485,10 @@
 @media screen and (max-width: 500px) {
   .prolist {
     background-color: linear-gradient(
-      to top,
+      to top ,
       rgba(255, 0, 0, 0),
       rgb(238, 215, 11)
-    );
+    )!important;
     flex-direction: column !important;
     height: 70vh;
   }
