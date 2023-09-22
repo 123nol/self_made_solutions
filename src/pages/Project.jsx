@@ -11,6 +11,7 @@ const Project = () => {
         if (index%2===0 ){
           project.style.flexDirection = "row-reverse";
           project.style.background = "linear-gradient(to right, rgba(255, 0, 0, 0), rgb(192, 212, 120))";
+          
         }
         else if (index%2!==0 ){
           project.style.flexDirection = "row"
