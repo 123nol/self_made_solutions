@@ -132,17 +132,17 @@
 .home {
   background-image: linear-gradient(
       to right,
-      rgba(115, 154, 68, 0.314),
-      #9fa14770
+      rgba(115, 154, 68, 0.467),
+      #9fa14786
     ),
-    url(https://images.pexels.com/photos/1462892/pexels-photo-1462892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    url(https://cdn.pixabay.com/photo/2017/08/30/07/56/money-2696228_1280.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40vw;
+  height: 90vh;
   width: 100%;
 }
 .home h1 {
@@ -191,7 +191,7 @@
 }
 @media screen and (max-width: 900px) {
   .home {
-    margin: 100px auto;
+    margin: auto;
   }
   .home h1 {
     font-size: 25px;

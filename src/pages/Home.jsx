@@ -2,7 +2,7 @@ import React from "react";
 import { FaPlay } from "react-icons/fa";
 const Home = () => {
   return (
-    <div className="home" style={{ height: "90vh" }}>
+    <div className="home">
       <h1>
         Welcome to <span>Self Made Solutions</span>
       </h1>
