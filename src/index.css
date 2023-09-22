@@ -414,6 +414,9 @@
   gap: 20px;
   width: 50%;
 }
+.listinfo h2{
+  color: rgba(115, 154, 68, 1);
+}
 
 .prolist img {
   object-fit: cover;
