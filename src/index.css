@@ -480,8 +480,11 @@
   padding-left: 30px; */
   height: 8vw;
   box-shadow: 0px 9px 30px rgba(115, 154, 68, 0.314);
-  padding: 10px;
+  padding: 30px;
   border-radius: 50px;
+  height: fit-content;
+  width: fit-content;
+
 }
 .contact h3{
   color: rgba(115, 154, 68, 0.9)
@@ -498,6 +501,9 @@
   }
   .contact {
     border: none !important;
+    height: fit-content;
+    width: fit-content;
+    padding: 30px;
   }
 }
 .form {
