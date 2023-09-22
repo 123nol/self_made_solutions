@@ -14,15 +14,20 @@ const NavBar = () => {
         <NavLink to="/" className="links" onClick={() => setClick(false)}>
           HOME
         </NavLink>
-        <NavLink to="/about" className="links" onClick={() => setClick(false)}>
-          ABOUT
-        </NavLink>
+
         <NavLink
           to="/services"
           className="links"
           onClick={() => setClick(false)}
         >
           SERVICES
+        </NavLink>
+        <NavLink
+          to="/product"
+          className="links"
+          onClick={() => setClick(false)}
+        >
+          PRODUCTS
         </NavLink>
         <NavLink
           to="/project"

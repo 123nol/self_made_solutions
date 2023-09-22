@@ -15,12 +15,12 @@
   position: relative;
   padding: 50px;
   align-items: center;
-  height: 8vh;
-  height: 6vh;
+  height: 7vh;
+
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   background-color: #bdbe7d50;
   transition: all 0.5s ease-in-out;
-  z-index: 100;
+  z-index: 100 !important;
 }
 .extend {
   margin-bottom: 32vh;
@@ -50,10 +50,9 @@
   transition: all 0.5s ease-in-out;
   font-weight: 700;
 }
-
 .links::after {
   content: "";
-  width: 0%;
+  width: 0% !important;
   display: inline-block;
   height: 3px;
   border-radius: 90px !important;
@@ -63,9 +62,9 @@
   left: 14px;
   transition: all 0.3s ease-in-out !important;
 }
+
 .links:hover::after {
-  content: "";
-  width: 40%;
+  width: 40% !important;
 }
 
 #nav {
@@ -134,6 +133,14 @@
   }
 }
 .home {
+  background-image: linear-gradient(
+      to right,
+      rgba(115, 154, 68, 0.314),
+      #9fa14770
+    ),
+    url(https://images.pexels.com/photos/1044320/pexels-photo-1044320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,7 +238,7 @@
 .serviceList {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 95%;
   margin: 40px auto;
 }
 .serviceList h1 {
@@ -258,7 +265,7 @@
   text-align: center;
 }
 .serviceSection .button button {
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 10px;
   border: none;
   box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2),
@@ -266,6 +273,8 @@
 }
 .serviceSection .button button:hover {
   cursor: pointer;
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.2),
+    0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .serviceType {
   display: flex;
@@ -343,6 +352,42 @@
     flex: auto;
   }
 }
+.products {
+  width: 100%;
+}
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 95%;
+  margin: 40px auto;
+}
+.productCard {
+  padding: 30px;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 30%; 
+  border-radius: 10px;
+}
+.redirectLink {
+  text-decoration: none;
+  color: black;
+}
+
+.productCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.2),
+    0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width: 900px) {
+  .productList {
+    flex-direction: column;
+  }
+  .productCard {
+    width: 100%;
+  }
+}
 .projects {
   display: flex;
   flex-direction: column;
@@ -353,6 +398,7 @@
 }
 .linkHeader {
   text-align: center;
+  margin-top: 50px;
 }
 .linkHeader::after {
   content: "";
