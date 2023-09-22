@@ -7,10 +7,10 @@ const Home = () => {
         Welcome to <span>Self Made Solutions</span>
       </h1>
       <p>Always Striving Excellence</p>
-      <p className="faPlay">
+      {/* <p className="faPlay">
         <a href="https://youtube.com">{<FaPlay />}</a>
         <span></span>
-      </p>
+      </p> */}
     </div>
   );
 };

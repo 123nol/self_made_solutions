@@ -8,92 +8,128 @@ const Product = () => {
       </div>
       <div className="productList">
         <div className="productCard">
-          <Link className="redirectLink">
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-              soluta eligendi temporibus consectetur ipsum praesentium quas
-              architecto nulla, harum quos distinctio corrupti.
+          <Link className="redirectLink" >
+            <div className="productInfo">
+              <h1>Therapy</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                voluptatem mollitia modi impedit perspiciatis cum culpa
+                recusandae soluta eligendi temporibus consectetur ipsum
+                praesentium quas architecto nulla, harum quos distinctio
+                corrupti.
+              </p>
             </div>
           </Link>
         </div>
         <div className="productCard">
           <Link className="redirectLink">
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-              soluta eligendi temporibus consectetur ipsum praesentium quas
-              architecto nulla, harum quos distinctio corrupti.
+            <div className="productInfo">
+              <h1>Therapy</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                voluptatem mollitia modi impedit perspiciatis cum culpa
+                recusandae soluta eligendi temporibus consectetur ipsum
+                praesentium quas architecto nulla, harum quos distinctio
+                corrupti.
+              </p>
             </div>
           </Link>
         </div>
         <div className="productCard">
           <Link className="redirectLink">
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-              soluta eligendi temporibus consectetur ipsum praesentium quas
-              architecto nulla, harum quos distinctio corrupti.
+            <div className="productInfo">
+              <h1>Therapy</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                voluptatem mollitia modi impedit perspiciatis cum culpa
+                recusandae soluta eligendi temporibus consectetur ipsum
+                praesentium quas architecto nulla, harum quos distinctio
+                corrupti.
+              </p>
             </div>
           </Link>
         </div>
         <div className="productCard">
           <Link className="redirectLink">
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-              soluta eligendi temporibus consectetur ipsum praesentium quas
-              architecto nulla, harum quos distinctio corrupti.
+            <div className="productInfo">
+              <h1>Therapy</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                voluptatem mollitia modi impedit perspiciatis cum culpa
+                recusandae soluta eligendi temporibus consectetur ipsum
+                praesentium quas architecto nulla, harum quos distinctio
+                corrupti.
+              </p>
             </div>
           </Link>
         </div>
         <div className="productCard">
           <Link className="redirectLink">
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-              soluta eligendi temporibus consectetur ipsum praesentium quas
-              architecto nulla, harum quos distinctio corrupti.
+            <div className="productInfo">
+              <h1>Therapy</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                voluptatem mollitia modi impedit perspiciatis cum culpa
+                recusandae soluta eligendi temporibus consectetur ipsum
+                praesentium quas architecto nulla, harum quos distinctio
+                corrupti.
+              </p>
             </div>
           </Link>
         </div>
         <div className="productCard">
           <Link className="redirectLink">
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-              soluta eligendi temporibus consectetur ipsum praesentium quas
-              architecto nulla, harum quos distinctio corrupti.
+            <div className="productInfo">
+              <h1>Therapy</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                voluptatem mollitia modi impedit perspiciatis cum culpa
+                recusandae soluta eligendi temporibus consectetur ipsum
+                praesentium quas architecto nulla, harum quos distinctio
+                corrupti.
+              </p>
             </div>
           </Link>
         </div>
         <div className="productCard">
           <Link className="redirectLink">
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-              soluta eligendi temporibus consectetur ipsum praesentium quas
-              architecto nulla, harum quos distinctio corrupti.
+            <div className="productInfo">
+              <h1>Therapy</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                voluptatem mollitia modi impedit perspiciatis cum culpa
+                recusandae soluta eligendi temporibus consectetur ipsum
+                praesentium quas architecto nulla, harum quos distinctio
+                corrupti.
+              </p>
             </div>
           </Link>
         </div>
         <div className="productCard">
           <Link className="redirectLink">
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-              soluta eligendi temporibus consectetur ipsum praesentium quas
-              architecto nulla, harum quos distinctio corrupti.
+            <div className="productInfo">
+              <h1>Therapy</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                voluptatem mollitia modi impedit perspiciatis cum culpa
+                recusandae soluta eligendi temporibus consectetur ipsum
+                praesentium quas architecto nulla, harum quos distinctio
+                corrupti.
+              </p>
             </div>
           </Link>
         </div>
         <div className="productCard">
           <Link className="redirectLink">
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-              voluptatem mollitia modi impedit perspiciatis cum culpa recusandae
-              soluta eligendi temporibus consectetur ipsum praesentium quas
-              architecto nulla, harum quos distinctio corrupti.
+            <div className="productInfo">
+              <h1>Therapy</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                voluptatem mollitia modi impedit perspiciatis cum culpa
+                recusandae soluta eligendi temporibus consectetur ipsum
+                praesentium quas architecto nulla, harum quos distinctio
+                corrupti.
+              </p>
             </div>
           </Link>
         </div>
