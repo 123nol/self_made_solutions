@@ -15,7 +15,7 @@
   position: relative;
   padding: 50px;
   align-items: center;
-  height: 7vh;
+  height: 8vh;
   height: 6vh;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   background-color: #bdbe7d50;
@@ -81,14 +81,17 @@
 }
 
 @media screen and (max-width: 900px) {
-  #nav {
+ 
+ 
+ 
+   #nav {
     display: flex;
     width: 100vw;
     position: absolute;
     flex-direction: column;
     left: 0;
     top: 7vh;
-    background-color: #bdbe7d50;
+    background-color: rgba(189, 190, 125, 0.314);
     transform: translateY(-200%);
     transition: 0.5s ease-in-out;
     text-align: center;
@@ -114,7 +117,7 @@
     text-align: end;
   }
   #nav.active {
-    transform: translateY(0%);
+    transform: translateY(11%);
   }
   .links:hover::after {
     content: "";
@@ -514,10 +517,15 @@
   gap: 30px;
   justify-content: center;
   margin-top: 50px;
-  background-color: rgba(115, 154, 68, 0.1);
+  
   margin-bottom: 50px;
   padding: 15px;
   border-radius: 10px;
+}
+.form{
+  background: url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .name_email {
@@ -564,7 +572,7 @@
   border-radius: 10px;
   padding: 15px;
   outline: none;
-  border:none;
+  border: 2px solid rgba(115, 154, 68, 0.9);
   box-shadow: 0px 9px 30px rgba(0, 0, 0,0.2);
   
 }
