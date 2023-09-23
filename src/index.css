@@ -16,7 +16,7 @@
   padding: 50px;
   align-items: center;
   height: 7vh;
-
+  
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   background-color: #bdbe7d50;
   transition: all 0.5s ease-in-out;
@@ -632,4 +632,84 @@
   border: 2px solid rgba(115, 154, 68, 0.9);
   box-shadow: 0px 9px 30px rgba(0, 0, 0,0.2);
   
+}
+.chat{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 20vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 10px;
+  background-color: aquamarine;
+  
+  transition: all 0.3s ease-in;
+  z-index: 1000;
+  border-radius: 20px;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+
+
+}
+/* .hello{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: aqua;
+
+} */
+/* .chat_esc{
+  display: flex;
+  flex-direction: row;
+  gap:9px;
+  width: fit-content;
+} */
+.comment{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+
+}
+.input_send{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.input_send textarea{
+  width: 85%;
+  padding: 10px;
+  border-radius: 30px;
+
+  
+}
+/* .send{
+  position:absolute;
+  right: 7px;
+  bottom: 30px;
+} */
+@media screen and (max-width:1490px) {
+  .chat{
+    width: 30vw;
+    height: 35vh;
+  }
+}
+@media screen and (max-width:800px) {
+  .chat{
+    width: 40vw;
+    height: 35vh;
+  }
+}
+@media screen and (max-width:500px) {
+  .chat{
+    width: 60vw;
+    height: 39vh;
+  }
 }
