@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Error from "./pages/Error";
 import Product from "./pages/Product";
+
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/product" element={<Product />} />
           <Route path="/services" element={<Services />} />
+          
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

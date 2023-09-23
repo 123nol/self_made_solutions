@@ -86,8 +86,8 @@
     position: absolute;
     flex-direction: column;
     left: 0;
-    top: 10vh;
-    background-color: #bdbe7d50;
+    top: 7vh;
+    background-color: rgba(189, 190, 125, 0.314);
     transform: translateY(-200%);
     transition: 0.5s ease-in-out;
     text-align: center;
@@ -113,7 +113,7 @@
     text-align: end;
   }
   #nav.active {
-    transform: translateY(0%);
+    transform: translateY(11%);
   }
   .links:hover::after {
     content: "";
@@ -514,9 +514,6 @@
   height: 50vh;
 
   object-fit: cover;
-  border-radius: 30px !important;
-  box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .listinfo {
   display: flex;
@@ -527,11 +524,17 @@
   gap: 20px;
   width: 50%;
 }
+.listinfo h2 {
+  color: rgba(115, 154, 68, 1);
+}
+.listinfo p {
+  font-weight: 600;
+  font-size: 18px;
+}
 
 .prolist img {
   object-fit: cover;
   width: 50%;
-  border-radius: 0 0 / 30px 30px;
 }
 @media screen and (max-width: 900px) {
   .prolist {
@@ -559,7 +562,7 @@
       rgb(238, 215, 11)
     ) !important;
     flex-direction: column !important;
-    height: 70vh;
+    height: 80vh;
   }
   .prolist img {
     width: 100%;
@@ -594,6 +597,14 @@
   /* padding-right: 30px;
   padding-left: 30px; */
   height: 8vw;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 30px;
+  border-radius: 20px;
+  height: fit-content;
+  width: fit-content;
+}
+.contact h3 {
+  color: rgba(115, 154, 68, 0.9);
 }
 
 @media screen and (max-width: 900px) {
@@ -607,6 +618,9 @@
   }
   .contact {
     border: none !important;
+    height: fit-content;
+    width: fit-content;
+    padding: 30px;
   }
 }
 .form {
@@ -617,11 +631,21 @@
   gap: 30px;
   justify-content: center;
   margin-top: 50px;
-  background-color: rgba(255, 231, 17, 0.09);
+
   margin-bottom: 50px;
   padding: 15px;
   border-radius: 10px;
+  background-color: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(238, 215, 11, 0.9)
+  );
 }
+/* .form{
+  background: url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
+  background-repeat: repeat;
+  background-size: contain;
+} */
 
 .name_email {
   display: flex;
@@ -654,10 +678,93 @@
 }
 .submit {
   width: 180px;
-  height: 30px;
+  height: 40px;
   border-radius: 10px;
+  border: none;
+  box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(115, 154, 68, 0.9);
 }
 .input {
   border-radius: 10px;
   padding: 15px;
+  outline: none;
+  border: 2px solid rgba(115, 154, 68, 0.9);
+  box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.2);
+}
+.chat {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 20vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 10px;
+  background-color: aquamarine;
+
+  transition: all 0.3s ease-in;
+  z-index: 1000;
+  border-radius: 20px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+/* .hello{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: aqua;
+
+} */
+/* .chat_esc{
+  display: flex;
+  flex-direction: row;
+  gap:9px;
+  width: fit-content;
+} */
+.comment {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+.input_send {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.input_send textarea {
+  width: 85%;
+  padding: 10px;
+  border-radius: 30px;
+}
+/* .send{
+  position:absolute;
+  right: 7px;
+  bottom: 30px;
+} */
+@media screen and (max-width: 1490px) {
+  .chat {
+    width: 30vw;
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  .chat {
+    width: 40vw;
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .chat {
+    width: 60vw;
+    height: 39vh;
+  }
 }

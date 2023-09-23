@@ -2,6 +2,7 @@ import { FaEnvelope } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Chat from "../components/Chat.jsx";
 const Footer = () => {
   return (
     <div className="footer">
@@ -106,6 +107,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      
     </div>
   );
 };
