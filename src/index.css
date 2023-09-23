@@ -159,12 +159,11 @@
   align-items: center;
   justify-content: center;
 }
-.imageContainer {
-  object-fit: cover;
-}
+
 .imageContainer img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .home h1 {
   text-align: center;
@@ -214,7 +213,13 @@
 @media screen and (max-width: 900px) {
   .home {
     margin: auto;
+    flex-direction: column;
   }
+  .home div {
+    width: 100%;
+    margin: 30px;
+  }
+
   .home h1 {
     font-size: 25px;
   }
