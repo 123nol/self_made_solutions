@@ -637,8 +637,9 @@
   position: fixed;
   bottom: 50px;
   right: 50px;
-  width: 20vw;
-  height: 30vh;
+  width: fit-content;
+  height: fit-content;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -690,26 +691,10 @@
 
   
 }
-/* .send{
-  position:absolute;
-  right: 7px;
-  bottom: 30px;
-} */
-@media screen and (max-width:1490px) {
+@media screen and (max-width:900px){
   .chat{
-    width: 30vw;
-    height: 35vh;
+    right:10px;
+    bottom:10px;
   }
-}
-@media screen and (max-width:800px) {
-  .chat{
-    width: 40vw;
-    height: 35vh;
-  }
-}
-@media screen and (max-width:500px) {
-  .chat{
-    width: 60vw;
-    height: 39vh;
-  }
+  
 }
