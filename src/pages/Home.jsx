@@ -1,16 +1,20 @@
 import React from "react";
-import { FaPlay } from "react-icons/fa";
+
 const Home = () => {
   return (
     <div className="home">
-      <h1>
-        Welcome to <span>Self Made Solutions</span>
-      </h1>
-      <p>Always Striving Excellence</p>
-      {/* <p className="faPlay">
-        <a href="https://youtube.com">{<FaPlay />}</a>
-        <span></span>
-      </p> */}
+      <div>
+        <h1>
+          Welcome to <span>Self Made Solutions</span>
+        </h1>
+        <p>Always Striving Excellence</p>
+      </div>
+      <div className="imageContainer">
+        <img
+          src="	https://www.qusaques.com/static/media/aboutus.de1550a0d93fd461e3fe.jpg"
+          alt=""
+        />
+      </div>
     </div>
   );
 };
