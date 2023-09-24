@@ -17,7 +17,7 @@
   align-items: center;
   height: 7vh;
 
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px 0px #91993da3;
   background-color: #bdbe7d50;
   transition: all 0.5s ease-in-out;
   z-index: 100 !important;
@@ -153,6 +153,9 @@
   text-align: center;
 }
 .home div:first-child {
+  background: -webkit-linear-gradient(right, #bec94d, #a2d15d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   box-shadow: none;
   display: flex;
   flex-direction: column;
@@ -167,17 +170,17 @@
 }
 .home h1 {
   text-align: center;
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 45px;
+  font-weight: 700;
 }
 .home h1 span {
   display: block;
-  font-size: 50px;
-  font-weight: 600;
+  font-size: 60px;
+  font-weight: 800;
 }
 .home p {
   text-align: center;
-  font-size: 23px;
+  font-size: 30px;
   font-weight: 600;
 }
 .home .faPlay {
@@ -698,19 +701,20 @@
   border: 2px solid rgba(115, 154, 68, 0.9);
   box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.2);
 }
+
 .chat {
   position: fixed;
   bottom: 50px;
   right: 50px;
   width: 20vw;
-  height: 30vh;
+  height: 37vh;
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding: 10px;
-  background-color: aquamarine;
+  background-color: #cfd239;
 
-  transition: all 0.3s ease-in;
+  transition: 0.3s ease-in;
   z-index: 1000;
   border-radius: 20px;
 }
