@@ -44,7 +44,7 @@
   color: black;
   letter-spacing: 1px;
   font-weight: 600;
-
+  font-size: 20px;
   padding: 15px;
   border-bottom: 0px solid rgb(145, 186, 214);
   transition: all 0.5s ease-in-out;
@@ -61,6 +61,7 @@
   bottom: 6px;
   left: 14px;
   transition: all 0.3s ease-in-out !important;
+  margin: auto;
 }
 
 .links:hover::after {
@@ -130,32 +131,27 @@
   }
 }
 .home {
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: cover;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+
   width: 95%;
-  margin: auto;
+  margin: 100px auto;
   z-index: -1;
   overflow: none;
   gap: 50px;
 }
-.home div {
+.home .homeChild {
   width: 100%;
-  height: 500px;
+  height: 600px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 6px 6px 20px 2px #bdbf5c4f;
   text-align: center;
+  align-items: center;
 }
-.home div:first-child {
-  background: -webkit-linear-gradient(left, #c4cd64, #3f680291);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.home .homeChild:first-child {
   box-shadow: none;
   display: flex;
   flex-direction: column;
@@ -167,8 +163,14 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 .home h1 {
+  margin-top: 50px;
+
+  background: -webkit-linear-gradient(left, #c4cd64, #3f680291);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 45px;
   font-weight: 700;
@@ -179,50 +181,56 @@
   font-weight: 800;
 }
 .home p {
+  background: -webkit-linear-gradient(left, #c4cd64, #3f680291);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
 }
-.home .faPlay {
-  position: relative;
-  margin: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.home .linkHeader::after {
+  content: none;
 }
-
-.home .faPlay a {
-  width: 100px;
-  height: 100px;
-  align-items: center;
-  color: #5177b8;
+.home button {
   padding: 20px;
-  transition: 0.2s ease-in-out;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 2px 10px 0 #5a680291;
+  background-color: #c6cd763b;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.1s ease-in-out;
 }
-.home a:hover {
-  color: #bfc20f;
-}
-.home .faPlay span {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: #4d5061;
-  border-radius: 100%;
-  top: 2px;
-  left: 0;
-  z-index: -1;
-  transition: 1s ease-in-out;
+.home button:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 15px 0 #5a680291;
 }
 @media screen and (max-width: 900px) {
   .home {
     margin: auto;
     flex-direction: column;
   }
-  .home div {
+  .home .homeChild {
     width: 100%;
     margin: 30px;
   }
 
+  .home h1 {
+    font-size: 35px;
+  }
+  .home h1 span {
+    font-size: 40px;
+  }
+  .home p {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home .homeChild {
+    height: 250px;
+    margin: 50px auto;
+  }
   .home h1 {
     font-size: 25px;
   }
@@ -230,10 +238,9 @@
     font-size: 30px;
   }
   .home p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
-
 .services {
   margin: 10px;
 }
