@@ -17,7 +17,7 @@
   align-items: center;
   height: 7vh;
 
-  box-shadow: 0 8px 20px 0px #91993da3;
+  box-shadow: 0 10px 20px 0px #8187367e;
   background-color: #bdbe7d50;
   transition: all 0.5s ease-in-out;
   z-index: 100 !important;
@@ -153,7 +153,7 @@
   text-align: center;
 }
 .home div:first-child {
-  background: -webkit-linear-gradient(right, #bec94d, #a2d15d);
+  background: -webkit-linear-gradient(left, #c4cd64, #3f680291);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   box-shadow: none;
@@ -181,7 +181,7 @@
 .home p {
   text-align: center;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .home .faPlay {
   position: relative;
