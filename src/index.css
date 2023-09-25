@@ -130,6 +130,16 @@
     margin: auto;
   }
 }
+.main {
+  width: 100%;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
+    ),
+    url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
+}
 .home {
   display: flex;
   flex-direction: row;
@@ -137,12 +147,13 @@
   justify-content: center;
 
   width: 95%;
-  margin: 100px auto;
+
   z-index: -1;
   overflow: none;
   gap: 50px;
 }
 .home .homeChild {
+  margin: 100px auto;
   width: 100%;
   height: 600px;
   border-radius: 10px;
@@ -169,7 +180,7 @@
   margin-top: 50px;
 
   background: -webkit-linear-gradient(left, #c4cd64, #3f680291);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 45px;
@@ -182,7 +193,7 @@
 }
 .home p {
   background: -webkit-linear-gradient(left, #c4cd64, #3f680291);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 30px;
@@ -192,11 +203,12 @@
   content: none;
 }
 .home button {
-  padding: 20px;
+  padding: 15px 20px;
+  color: #3f680291;
   border-radius: 10px;
   border: none;
   box-shadow: 0px 2px 10px 0 #5a680291;
-  background-color: #c6cd763b;
+  background-color: #c6cd7623;
   margin: 20px;
   font-size: 18px;
   font-weight: 500;
@@ -474,6 +486,12 @@
 }
 
 .projects {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -513,11 +531,11 @@
   padding-top: 80px;
   padding-bottom: 30px;
 }
-.prolists {
+/* .prolists {
   background: url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
   background-repeat: repeat;
   background-size: contain;
-}
+} */
 .linkheader {
   margin-bottom: 45px;
   display: block;
