@@ -220,6 +220,7 @@
 }
 @media screen and (max-width: 900px) {
   .home {
+    gap: 0;
     margin: auto;
     flex-direction: column;
   }
@@ -227,7 +228,9 @@
     width: 100%;
     margin: 30px;
   }
-
+  .home .homeChild:first-child {
+    height: 200px;
+  }
   .home h1 {
     font-size: 35px;
   }
@@ -237,12 +240,16 @@
   .home p {
     font-size: 24px;
   }
+  .home button {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 600px) {
   .home .homeChild {
     height: 250px;
     margin: 50px auto;
   }
+
   .home h1 {
     font-size: 25px;
   }
@@ -738,20 +745,27 @@
   flex-direction: column;
   gap: 40px;
   padding: 10px;
-  background-image: linear-gradient(#859a6c, #bcbd76);
+  background-image: linear-gradient(#8da375, #b5b77f);
   transition: 0.3s ease-in;
   z-index: 1000;
   border-radius: 20px;
 }
 
 .header {
+  padding: 20px 25px 0px 25px !important;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  align-items: center;
+  align-items: left;
 }
-
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
 /* .hello{
   display: flex;
   flex-direction: column;
@@ -775,6 +789,7 @@
   flex-direction: row;
   gap: 20px;
   align-items: center;
+  padding-bottom: 10px;
 }
 .input_send textarea {
   background-color: rgba(255, 255, 255, 0.415);

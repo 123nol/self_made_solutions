@@ -13,16 +13,14 @@ const Chat = () => {
         style={{ transform: open ? "translateY(0)" : "translateY(200%)" }}
       >
         <div className="header">
-          <h1>Hello</h1>
+          <div className="headerContainer">
+            <h1>Hello</h1>
 
-          <FaTimes onClick={() => setOpen(!open)} />
-        </div>
+            <FaTimes onClick={() => setOpen(!open)} />
+          </div>
 
-        <div>
           <h4>Welcome to our Portfolio website</h4>
-        </div>
 
-        <div>
           <p>We typically reply within a few minutes</p>
         </div>
         <div className="input_send">
