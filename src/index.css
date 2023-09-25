@@ -783,6 +783,14 @@
   position: fixed;
   bottom: 50px;
   right: 50px;
+  background-color: rgba(127, 255, 212,0.4);
+  border-radius: 100%;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
 }
 .input_send {
   display: flex;

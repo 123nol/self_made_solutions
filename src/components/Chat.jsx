@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FaComment, FaTimes, FaBars, FaPaperPlane } from "react-icons/fa";
+import Chatimg from "./images/Chat.svg";
+
 const Chat = () => {
   const [chat, setChat] = useState("");
   const [open, setOpen] = useState(false);
@@ -39,10 +41,11 @@ const Chat = () => {
           transform: open ? "translateY(300%)" : "translateY(0)",
           zIndex: "0",
           transition: "0.3s ease-in",
+          cursor:"pointer"
         }}
       >
-        <FaComment className="chatIocn" />
-        <h6>lets chat</h6>
+        <img src={Chatimg} alt="" style={{height: "40px", }}/>
+        <h5>lets chat</h5>
       </div>
     </div>
   );
