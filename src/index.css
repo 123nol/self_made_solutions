@@ -738,12 +738,12 @@
   flex-direction: column;
   gap: 40px;
   padding: 10px;
-  background-color: #cfd239;
-
+  background-image: linear-gradient(#859a6c, #bcbd76);
   transition: 0.3s ease-in;
   z-index: 1000;
   border-radius: 20px;
 }
+
 .header {
   display: flex;
   flex-direction: row;
@@ -751,6 +751,7 @@
   width: 100%;
   align-items: center;
 }
+
 /* .hello{
   display: flex;
   flex-direction: column;
@@ -776,14 +777,16 @@
   align-items: center;
 }
 .input_send textarea {
+  background-color: rgba(255, 255, 255, 0.415);
+  text-align: center;
+
   width: 85%;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 20px;
 }
-@media screen and (max-width:900px){
-  .chat{
-    right:10px;
-    bottom:10px;
+@media screen and (max-width: 900px) {
+  .chat {
+    right: 10px;
+    bottom: 10px;
   }
-  
 }

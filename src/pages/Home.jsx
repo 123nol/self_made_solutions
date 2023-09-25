@@ -1,6 +1,7 @@
 import React from "react";
-import groupPic from "../components/images/people.svg";
+
 import { Link } from "react-router-dom";
+import welcomeGif from "../components/images/Welcome_1.gif";
 const Home = () => {
   return (
     <div className="main">
@@ -22,7 +23,10 @@ const Home = () => {
           </div>
         </div>
         <div className="homeChild imageContainer">
-          <img src={groupPic} alt="" />
+          <a style={{ display: "none" }} href="https://storyset.com/people">
+            People illustrations by Storyset
+          </a>
+          <img src={welcomeGif} alt="" />
         </div>
       </div>
     </div>

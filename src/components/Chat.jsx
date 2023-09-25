@@ -19,11 +19,11 @@ const Chat = () => {
         </div>
 
         <div>
-          <h4>welcome to our Portfolio website</h4>
+          <h4>Welcome to our Portfolio website</h4>
         </div>
 
         <div>
-          <p>we typically reply within a few minutes</p>
+          <p>We typically reply within a few minutes</p>
         </div>
         <div className="input_send">
           <textarea
@@ -43,7 +43,7 @@ const Chat = () => {
           transition: "0.3s ease-in",
         }}
       >
-        <FaComment />
+        <FaComment className="chatIocn" />
         <h6>lets chat</h6>
       </div>
     </div>
