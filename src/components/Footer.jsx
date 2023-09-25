@@ -54,7 +54,7 @@ const Footer = () => {
             </li>
           </p>
         </div>
-        <div className="footerInfo">
+        {/* <div className="footerInfo">
           <h1>Affiliates</h1>
           <p>
             <li>
@@ -82,7 +82,7 @@ const Footer = () => {
               Design Rush
             </li>
           </p>
-        </div>
+        </div> */}
         <div className="footerInfo">
           <h1>Contact Us</h1>
           <p>
