@@ -41,10 +41,10 @@ const Chat = () => {
           transform: open ? "translateY(300%)" : "translateY(0)",
           zIndex: "0",
           transition: "0.3s ease-in",
-          cursor:"pointer"
+          cursor: "pointer",
         }}
       >
-        <img src={Chatimg} alt="" style={{height: "40px", }}/>
+        <img src={Chatimg} alt="" style={{ height: "40px" }} />
         <h5>lets chat</h5>
       </div>
     </div>

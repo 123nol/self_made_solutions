@@ -311,8 +311,7 @@
   padding: 20px;
   border-radius: 10px;
   position: relative;
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .serviceSection .button {
   text-align: center;
@@ -329,6 +328,10 @@
   box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.2),
     0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.serviceSection li:hover{
+  cursor: pointer;
+  color: brown;
+}
 .serviceType {
   display: flex;
   width: 100%;
@@ -336,11 +339,21 @@
 .serviceInfo {
   width: 20%;
 }
+.serviceInfo li {
+  list-style-type: circle;
+}
 .serviceExplanation {
   width: 80%;
 
   padding: 10px;
 }
+.div-visible{
+  display: block;
+}
+.div-invisible{
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .serviceType {
     flex-direction: column;
@@ -419,7 +432,6 @@
 }
 .productCard {
   position: relative;
-
   box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 30%;
@@ -458,6 +470,10 @@
   margin: 5px auto;
   height: 2px;
 }
+.productInfo p {
+  width: 80%;
+  margin: auto;
+}
 .redirectLink {
   text-decoration: none;
   color: black;
@@ -469,7 +485,7 @@
     0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .productCard:hover .productInfo {
-  height: 90%;
+  height: 80%;
 }
 
 @media screen and (max-width: 900px) {
