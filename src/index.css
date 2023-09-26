@@ -349,6 +349,16 @@
 }
 .div-visible {
   display: block;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .div-invisible {
   display: none;
@@ -807,9 +817,7 @@
   display: flex;
   flex-direction: column;
 }
-/* .comment h5{
-  font-size: 14px;
-} */
+
 .input_send {
   display: flex;
   flex-direction: row;
