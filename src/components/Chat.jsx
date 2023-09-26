@@ -44,8 +44,8 @@ const Chat = () => {
           cursor: "pointer",
         }}
       >
-        <img src={Chatimg} alt="" style={{ height: "40px" }} />
-        <h5>lets chat</h5>
+        <img src={Chatimg} alt="" style={{ height: "30px" }} />
+        <p style={{ fontSize: "10px" }}>lets chat</p>
       </div>
     </div>
   );
