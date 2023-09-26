@@ -116,18 +116,9 @@
   #nav.active {
     transform: translateY(11%);
   }
+
   .links:hover::after {
-    content: "";
-    width: 7%;
-    display: inline-block;
-    height: 3px;
-    border-radius: 25%;
-    background-color: black;
-    position: absolute;
-    bottom: 6px;
-    left: 0;
-    right: 0;
-    margin: auto;
+    content: none;
   }
 }
 .main {
