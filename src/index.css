@@ -328,10 +328,7 @@
   box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.2),
     0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.serviceSection li:hover {
-  cursor: pointer;
-  color: brown;
-}
+
 .serviceType {
   display: flex;
   width: 100%;
@@ -352,7 +349,7 @@
   list-style-type: circle;
 }
 .serviceExplanation {
-  width: 80%;
+  width: 100%;
   display: none;
   padding: 10px;
   /* display: none; */
@@ -361,7 +358,7 @@
 .serviceExplanation.grow {
   display: block;
   animation-name: fadein;
-  animation-duration: 3s;
+  animation-duration: 1s;
 
   /* display: block; */
 }
