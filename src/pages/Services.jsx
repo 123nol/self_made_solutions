@@ -1,10 +1,9 @@
 // import { Link } from "react-router-dom";
 import { useState } from "react";
-
 const Services = () => {
-  const [erp, setErp] = useState(1);
-  const [consult, setConsult] = useState(1);
-  const [market, setMarket] = useState(1);
+  const [orderERP, setOrderERP] = useState(1);
+  const [orderCons, setOrderCons] = useState(1);
+  const [orderDig, setOrderDig] = useState(1);
   return (
     <div className="services">
       <div className="linkHeader">
@@ -19,46 +18,84 @@ const Services = () => {
             <div className="serviceInfo">
               <h3>Service Includes</h3>
               <p>
-                <li className="linkList" onClick={() => setErp(1)}>
+                <li
+                  onClick={() => setOrderERP(1)}
+                  style={{ cursor: "pointer" }}
+                >
                   Therapy
                 </li>
-                <li className="linkList" onClick={() => setErp(2)}>
+                <li
+                  onClick={() => setOrderERP(2)}
+                  style={{ cursor: "pointer" }}
+                >
                   Cheese
                 </li>
-                <li className="linkList" onClick={() => setErp(3)}>
+                <li
+                  onClick={() => setOrderERP(3)}
+                  style={{ cursor: "pointer" }}
+                >
                   System
                 </li>
-                <li className="linkList" onClick={() => setErp(4)}>
+                <li
+                  onClick={() => setOrderERP(4)}
+                  style={{ cursor: "pointer" }}
+                >
                   Management
                 </li>
               </p>
             </div>
-
-            <div className="serviceExplanation">
-              <p className={erp === 1 ? "div-visible" : "div-invisible"}>
-                item1 ipsum dolor sit amet consectetur adipisicing elit. Est
+            <div
+              className="containerserve"
+              style={{ width: "100%", overflow: "none" }}
+            >
+              <div
+                className={
+                  orderERP === 1
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                1,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
-              <p className={erp === 2 ? "div-visible" : "div-invisible"}>
-                item2 ipsum dolor sit amet consectetur adipisicing elit. Est
+              </div>
+              <div
+                className={
+                  orderERP === 2
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                2,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
-              <p className={erp === 3 ? "div-visible" : "div-invisible"}>
-                item3 ipsum dolor sit amet consectetur adipisicing elit. Est
+              </div>
+              <div
+                className={
+                  orderERP === 3
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                3,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
-              <p className={erp === 4 ? "div-visible" : "div-invisible"}>
-                item4 ipsum dolor sit amet consectetur adipisicing elit. Est
+              </div>
+              <div
+                className={
+                  orderERP === 4
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                4,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
+              </div>
             </div>
           </div>
           <div className="button">
@@ -73,46 +110,81 @@ const Services = () => {
             <div className="serviceInfo">
               <h3>Service Includes</h3>
               <p>
-                <li className="linkList" onClick={() => setConsult(1)}>
+                <li
+                  onClick={() => setOrderCons(1)}
+                  style={{ cursor: "pointer" }}
+                >
                   Therapy
                 </li>
-                <li className="linkList" onClick={() => setConsult(2)}>
+                <li
+                  onClick={() => setOrderCons(2)}
+                  style={{ cursor: "pointer" }}
+                >
                   Cheese
                 </li>
-                <li className="linkList" onClick={() => setConsult(3)}>
+                <li
+                  onClick={() => setOrderCons(3)}
+                  style={{ cursor: "pointer" }}
+                >
                   System
                 </li>
-                <li className="linkList" onClick={() => setConsult(4)}>
+                <li
+                  onClick={() => setOrderCons(4)}
+                  style={{ cursor: "pointer" }}
+                >
                   Management
                 </li>
               </p>
             </div>
-
-            <div className="serviceExplanation">
-              <p className={consult === 1 ? "div-visible" : "div-invisible"}>
-                item1 ipsum dolor sit amet consectetur adipisicing elit. Est
+            <div style={{ width: "100%", overflow: "none" }}>
+              <div
+                className={
+                  orderCons === 1
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                1,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
-              <p className={consult === 2 ? "div-visible" : "div-invisible"}>
-                item2 ipsum dolor sit amet consectetur adipisicing elit. Est
+              </div>
+              <div
+                className={
+                  orderCons === 2
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                2,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
-              <p className={consult === 3 ? "div-visible" : "div-invisible"}>
-                item3 ipsum dolor sit amet consectetur adipisicing elit. Est
+              </div>
+              <div
+                className={
+                  orderCons === 3
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                3,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
-              <p className={consult === 4 ? "div-visible" : "div-invisible"}>
-                item4 ipsum dolor sit amet consectetur adipisicing elit. Est
+              </div>
+              <div
+                className={
+                  orderCons === 4
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                4,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
+              </div>
             </div>
           </div>
           <div className="button">
@@ -127,46 +199,81 @@ const Services = () => {
             <div className="serviceInfo">
               <h3>Service Includes</h3>
               <p>
-                <li className="linkList" onClick={() => setMarket(1)}>
+                <li
+                  onClick={() => setOrderDig(1)}
+                  style={{ cursor: "pointer" }}
+                >
                   Therapy
                 </li>
-                <li className="linkList" onClick={() => setMarket(2)}>
+                <li
+                  onClick={() => setOrderDig(2)}
+                  style={{ cursor: "pointer" }}
+                >
                   Cheese
                 </li>
-                <li className="linkList" onClick={() => setMarket(3)}>
+                <li
+                  onClick={() => setOrderDig(3)}
+                  style={{ cursor: "pointer" }}
+                >
                   System
                 </li>
-                <li className="linkList" onClick={() => setMarket(4)}>
+                <li
+                  onClick={() => setOrderDig(4)}
+                  style={{ cursor: "pointer" }}
+                >
                   Management
                 </li>
               </p>
             </div>
-
-            <div className="serviceExplanation">
-              <p className={market === 1 ? "div-visible" : "div-invisible"}>
-                item1 ipsum dolor sit amet consectetur adipisicing elit. Est
+            <div style={{ width: "100%", overflow: "none" }}>
+              <div
+                className={
+                  orderDig === 1
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                1,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
-              <p className={market === 2 ? "div-visible" : "div-invisible"}>
-                item2 ipsum dolor sit amet consectetur adipisicing elit. Est
+              </div>
+              <div
+                className={
+                  orderDig === 2
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                2,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
-              <p className={market === 3 ? "div-visible" : "div-invisible"}>
-                item3 ipsum dolor sit amet consectetur adipisicing elit. Est
+              </div>
+              <div
+                className={
+                  orderDig === 3
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                3,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
-              <p className={market === 4 ? "div-visible" : "div-invisible"}>
-                item4 ipsum dolor sit amet consectetur adipisicing elit. Est
+              </div>
+              <div
+                className={
+                  orderDig === 4
+                    ? "serviceExplanation grow"
+                    : "serviceExplanation "
+                }
+              >
+                4,Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 deserunt consequatur quasi reprehenderit enim culpa,
                 voluptatibus soluta natus qui id perferendis minima expedita
                 esse quisquam porro libero nisi eveniet quae?
-              </p>
+              </div>
             </div>
           </div>
         </div>

@@ -339,29 +339,48 @@
 .serviceInfo {
   width: 20%;
 }
+.serviceInfo p li:hover{
+  color:rgb(216, 137, 73)
+  
+}
+.contianerserve{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 .serviceInfo li {
   list-style-type: circle;
 }
 .serviceExplanation {
   width: 80%;
-
-  padding: 10px;
-}
-.div-visible {
-  display: block;
-  animation-name: fade;
-  animation-duration: 1s;
-}
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.div-invisible {
   display: none;
+  padding: 10px;
+  /* display: none; */
+  transition: all 0.3s ease-in-out;
+  
+  
+ 
+}
+.serviceExplanation.grow{
+  display: block;
+  animation-name: fadein;
+  animation-duration: 3s;
+  
+  
+  
+  
+  
+  /* display: block; */
+}
+@keyframes fadein {
+  from{
+    opacity: 0%;
+  }
+  to{
+    opacity: 100%;
+  }
+  
 }
 
 @media screen and (max-width: 900px) {
