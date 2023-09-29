@@ -13,7 +13,7 @@ const Home = () => {
           <div className="homeChild">
             <div>
               <h1>
-                Welcome to <span>Self Made Solutions</span>
+                Welcome to <span>Selfmade Solutions</span>
               </h1>
               <p>Always Striving Excellence</p>
               <div>

@@ -14,7 +14,7 @@ const NavBar = () => {
               <img src={Logo} />
             </div>
 
-            <p>Self Made Solutions</p>
+            <p>Selfmade Solutions</p>
           </div>
         </NavLink>
       </div>
