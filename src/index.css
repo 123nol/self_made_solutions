@@ -159,7 +159,7 @@
     align-items: center;
     font-size: 18px;
   }
-  .banner .imageContainer {
+  .banner .imageContainer img {
     box-shadow: 0px 0px 20px 0px #b6be79;
     border-radius: 100%;
     margin: auto 5px auto auto !important;
@@ -302,6 +302,8 @@
 }
 .services {
   margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .services p {
   font-size: 14px;
@@ -481,14 +483,17 @@
 }
 .products {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
 .productList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   width: 95%;
-  margin: 40px auto;
+  margin: 50px auto;
 }
 .productCard {
   position: relative;
