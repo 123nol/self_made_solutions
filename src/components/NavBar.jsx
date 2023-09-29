@@ -8,8 +8,14 @@ const NavBar = () => {
   return (
     <div className={clicked ? "bar extend" : "bar"}>
       <div className="banner">
-        <NavLink to="/">
-          <img src={Logo} />
+        <NavLink to="/" className="bannerLink links">
+          <div className="logoContainer">
+            <div className="imageContainer">
+              <img src={Logo} />
+            </div>
+
+            <p>Self Made Solutions</p>
+          </div>
         </NavLink>
       </div>
       <nav id="nav" className={clicked ? "#nav active" : "#nav"}>
