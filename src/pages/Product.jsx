@@ -9,7 +9,10 @@ const Product = () => {
       </div>
       <div className="productList">
         <div className="productCard">
-          <Link className="redirectLink" to={"https://youtube.com"}>
+          <Link
+            className="redirectLink"
+            to={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+          >
             <div className="productInfo">
               <h1>Therapy</h1>
               <p>
