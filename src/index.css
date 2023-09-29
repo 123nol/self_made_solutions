@@ -7,6 +7,24 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
+}
+::-webkit-scrollbar {
+  width: 13px;
+  
+}
+::-webkit-scrollbar-track {
+  
+  border-radius: 10px;
+  border:none;
+  opacity: 0%;
+  
+}
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 3px;
+  height: 2px;
+  
 }
 
 .bar {
