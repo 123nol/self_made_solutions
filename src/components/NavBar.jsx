@@ -11,7 +11,7 @@ const NavBar = () => {
         <NavLink to="/" className="bannerLink links">
           <div className="logoContainer">
             <div className="imageContainer">
-              <img src={Logo} />
+              <img src={Logo} alt="Selfmade Solutions" />
             </div>
 
             <p>
