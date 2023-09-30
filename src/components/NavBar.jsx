@@ -11,10 +11,17 @@ const NavBar = () => {
         <NavLink to="/" className="bannerLink links">
           <div className="logoContainer">
             <div className="imageContainer">
-              <img src={Logo} />
+              <img src={Logo} alt="Selfmade Solutions" />
             </div>
 
+<<<<<<< HEAD
             <p>SelfMade <br/> Solutions </p>
+=======
+            <p>
+              Selfmade <br />
+              Solutions
+            </p>
+>>>>>>> 89527efb3d0d1a6a9f33675913a533538e68f2cb
           </div>
         </NavLink>
       </div>
