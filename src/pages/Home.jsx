@@ -1,6 +1,5 @@
 import React from "react";
-import Services from "./Services";
-import Product from "./Product";
+
 import Contact from "./Contact";
 import { Link } from "react-router-dom";
 import welcomeGif from "../components/images/Welcome_1.gif";
@@ -34,8 +33,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Services />
-      <Product />
+
       <Contact />
     </div>
   );

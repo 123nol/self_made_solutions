@@ -55,7 +55,7 @@ const Services = () => {
               className="containerserve"
               style={{ width: "100%", overflow: "none" }}
             >
-              <h1>{orderERP.title}</h1>
+              <h2>{orderERP.title}</h2>
               <div
                 className={
                   orderERP.order === 1
@@ -197,10 +197,7 @@ const Services = () => {
                     </p>
                   </div>
                   <div className="serviceImage">
-                    <img
-                      src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
-                    />
+                    <img src={require("../")} alt="Service Image" />
                   </div>
                 </div>
               </div>

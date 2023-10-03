@@ -1,14 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@500&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Poppins";
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 13px;
 }
 ::-webkit-scrollbar-track {
@@ -16,24 +16,27 @@
   border: none;
   opacity: 0%;
 }
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbafooterr-thumb {
   background: grey;
   border-radius: 3px;
   height: 2px;
-}
+} */
 
 .bar {
-  display: flex;
   flex-direction: row;
-  position: relative;
+
   padding: 50px 20px;
   align-items: center;
   height: 7vh;
 
   box-shadow: 0 10px 20px 0px #8187367e;
-  background-color: #bdbe7d50;
+  background-color: #dfdfbcfe;
   transition: all 0.5s ease-in-out;
   z-index: 100 !important;
+  display: flex;
+  position: sticky;
+
+  top: 0;
 }
 .extend {
   margin-bottom: 32vh;
@@ -135,8 +138,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 25px;
   }
+
   .banner .imageContainer {
     box-shadow: 0px 0px 20px 0px #b6be79;
     border-radius: 100%;
@@ -363,7 +366,8 @@
   background-color: #bfc20f;
 }
 .serviceSection {
-  padding: 20px;
+  padding: 50px 20px;
+
   border-radius: 10px;
   position: relative;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
@@ -390,6 +394,8 @@
 }
 .serviceInfo {
   width: 20%;
+  border-right: 2px solid rgb(216, 137, 73);
+  margin: 20px;
 }
 .serviceInfo p li:hover {
   color: rgb(216, 137, 73);
@@ -401,9 +407,13 @@
   justify-content: center;
   width: 80%;
 }
+.contianerserve h2 {
+  text-align: center;
+}
 .serviceInfo li {
   list-style-type: circle;
 }
+
 .serviceExplanation {
   width: 100%;
   display: none;
@@ -417,6 +427,7 @@
   animation-name: fadein;
   animation-duration: 1s;
 }
+
 .serviceExplanationContainer {
   display: flex;
   gap: 10px;
@@ -465,9 +476,7 @@
 
 .footer {
   width: 100%;
-
-  /* background-color: #b8c26160; */
-  background-image: linear-gradient(#b8c26185, #c3c7a978);
+  background-color: #dfdfbcfe;
 }
 .footerDetails {
   display: flex;
@@ -550,7 +559,7 @@
 .productInfo {
   background-color: white;
   position: absolute;
-  padding: 10px 30px;
+  padding: 10px 2%;
   top: auto;
   bottom: 0;
   left: 0;
@@ -571,7 +580,7 @@
   height: 2px;
 }
 .productInfo p {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .redirectLink {
@@ -585,7 +594,7 @@
     0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .productCard:hover .productInfo {
-  height: 80%;
+  height: 50%;
 }
 
 @media screen and (max-width: 900px) {
@@ -615,6 +624,7 @@
       rgba(255, 255, 255, 0.7)
     ),
     url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
+
   display: flex;
   flex-direction: column;
   justify-content: center;

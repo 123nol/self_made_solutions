@@ -15,8 +15,8 @@ const NavBar = () => {
             </div>
 
             <p>
-              Selfmade <br />
-              Solutions
+              Selfmade <br />{" "}
+              <span style={{ fontWeight: "600" }}>Solutions</span>
             </p>
           </div>
         </NavLink>
