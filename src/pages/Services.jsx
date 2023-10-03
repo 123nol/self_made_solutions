@@ -15,7 +15,7 @@ const Services = () => {
           <div className="serviceType">
             <div className="serviceInfo">
               <h1>ERP Serivce</h1>
-              <h3>Service Includes</h3>
+              {/* <h3>Service Includes</h3> */}
               <p>
                 <li
                   onClick={() =>
@@ -52,7 +52,7 @@ const Services = () => {
               </p>
             </div>
             <div
-              className="containerserve"
+              className="serviceContainer"
               style={{ width: "100%", overflow: "none" }}
             >
               <h2>{orderERP.title}</h2>
@@ -88,7 +88,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -125,7 +125,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -162,7 +162,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -196,9 +196,6 @@ const Services = () => {
                       non molestiae enim voluptatibus accusantium.
                     </p>
                   </div>
-                  <div className="serviceImage">
-                    <img src={require("../")} alt="Service Image" />
-                  </div>
                 </div>
               </div>
             </div>
@@ -213,7 +210,7 @@ const Services = () => {
           <div className="serviceType">
             <div className="serviceInfo">
               <h1>Consulting</h1>
-              <h3>Service Includes</h3>
+              {/* <h3>Service Includes</h3> */}
               <p>
                 <li
                   onClick={() =>
@@ -253,7 +250,10 @@ const Services = () => {
                 </li>
               </p>
             </div>
-            <div style={{ width: "100%", overflow: "none" }}>
+            <div
+              className="serviceContainer"
+              style={{ width: "100%", overflow: "none" }}
+            >
               <div
                 className={
                   orderCons.order === 1
@@ -287,7 +287,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -325,7 +325,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -363,7 +363,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -401,7 +401,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -418,7 +418,7 @@ const Services = () => {
           <div className="serviceType">
             <div className="serviceInfo">
               <h1>Digital Marketing</h1>
-              <h3>Service Includes</h3>
+              {/* <h3>Service Includes</h3> */}
               <p>
                 <li
                   onClick={() =>
@@ -470,7 +470,10 @@ const Services = () => {
                 </li>
               </p>
             </div>
-            <div style={{ width: "100%", overflow: "none" }}>
+            <div
+              className="serviceContainer"
+              style={{ width: "100%", overflow: "none" }}
+            >
               <div
                 className={
                   orderDig.order === 1
@@ -504,7 +507,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -542,7 +545,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -580,7 +583,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -618,7 +621,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
