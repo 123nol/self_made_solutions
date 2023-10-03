@@ -394,7 +394,6 @@
 }
 .serviceInfo {
   width: 20%;
-  border-right: 2px solid rgb(216, 137, 73);
   margin: 20px;
 }
 .serviceInfo p li:hover {
