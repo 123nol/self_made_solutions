@@ -182,7 +182,6 @@ const Services = () => {
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
                     <h2>{orderERP.title}</h2>
-
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -202,6 +201,12 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                  </div>
+                  <div className="serviceImage">
+                    <img
+                      src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
