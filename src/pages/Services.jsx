@@ -3,6 +3,7 @@ const Services = () => {
   const [orderERP, setOrderERP] = useState({ order: 1, title: "Therapy" });
   const [orderCons, setOrderCons] = useState({ order: 1, title: "Therapy" });
   const [orderDig, setOrderDig] = useState({ order: 1, title: "Therapy" });
+
   return (
     <div className="services">
       <div className="linkHeader">
@@ -55,7 +56,6 @@ const Services = () => {
               className="serviceContainer"
               style={{ width: "100%", overflow: "none" }}
             >
-              <h2>{orderERP.title}</h2>
               <div
                 className={
                   orderERP.order === 1
@@ -65,6 +65,7 @@ const Services = () => {
               >
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderERP.title}</h2>
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -102,6 +103,8 @@ const Services = () => {
               >
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderERP.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -139,6 +142,8 @@ const Services = () => {
               >
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderERP.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -176,6 +181,8 @@ const Services = () => {
               >
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderERP.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -261,9 +268,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Therapy</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderCons.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -299,9 +307,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Cheese</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderCons.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -337,9 +346,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>System</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderCons.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -375,9 +385,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Management</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderCons.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -481,9 +492,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Therapy</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderDig.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -519,9 +531,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Cheese</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderDig.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -557,9 +570,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>System</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderDig.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -595,9 +609,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Management</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderDig.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
