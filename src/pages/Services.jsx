@@ -19,33 +19,33 @@ const Services = () => {
               {/* <h3>Service Includes</h3> */}
               <p>
                 <li
-                  onClick={() =>
-                    setOrderERP({ ...orderERP, title: "Therapy", order: 1 })
-                  }
+                  onClick={() => {
+                    setOrderERP({ ...orderERP, title: "Therapy", order: 1 });
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   Therapy
                 </li>
                 <li
-                  onClick={() =>
-                    setOrderERP({ ...orderERP, title: "Cheese", order: 2 })
-                  }
+                  onClick={() => {
+                    setOrderERP({ ...orderERP, title: "Cheese", order: 2 });
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   Cheese
                 </li>
                 <li
-                  onClick={() =>
-                    setOrderERP({ ...orderERP, title: "System", order: 3 })
-                  }
+                  onClick={() => {
+                    setOrderERP({ ...orderERP, title: "System", order: 3 });
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   System
                 </li>
                 <li
-                  onClick={() =>
-                    setOrderERP({ ...orderERP, title: "Management", order: 4 })
-                  }
+                  onClick={() => {
+                    setOrderERP({ ...orderERP, title: "Management", order: 4 });
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   Management
