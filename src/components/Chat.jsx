@@ -9,7 +9,7 @@ const Chat = () => {
     return setChat("");
   };
   return (
-    <div className="chatbox">
+    <div className="chatbox" >
       <div
         className="chat"
         style={{ transform: open ? "translateY(0)" : "translateY(200%)" }}

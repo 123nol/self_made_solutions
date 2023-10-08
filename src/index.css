@@ -31,9 +31,12 @@
   height: 7vh;
 
   box-shadow: 0 10px 20px 0px #8187367e;
-  background-color: #bdbe7d50;
+  background-color: #dadab7fe;
   transition: all 0.5s ease-in-out;
   z-index: 100 !important;
+  position: sticky ;
+  top:0;
+  
 }
 .extend {
   margin-bottom: 32vh;
@@ -349,6 +352,7 @@
   width: 95%;
   margin: 40px auto;
 }
+
 .serviceList h1 {
   font-weight: 600;
   text-align: left;
@@ -649,7 +653,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 150px;
   align-items: center;
   padding-top: 80px;
   padding-bottom: 30px;
@@ -753,7 +757,7 @@
   /* padding-right: 30px;
   padding-left: 30px; */
   height: 8vw;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   padding: 30px;
   border-radius: 20px;
   height: fit-content;
@@ -797,11 +801,10 @@
     rgba(238, 215, 11, 0.9)
   );
 }
-/* .form{
-  background: url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
-  background-repeat: repeat;
-  background-size: contain;
-} */
+ .form{
+  width: 60vw;
+  height: 40vh;
+} 
 
 .name_email {
   display: flex;
@@ -906,6 +909,22 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  animation-name: chat;
+  
+  animation-duration: 3s;
+  transition: all 0.3s ease-in;
+
+}
+@keyframes chat{
+  from{
+    transform: translateY(200%);
+
+  }
+
+    to{
+     transform: translateY(0%);
+    }
+  
 }
 
 .input_send {

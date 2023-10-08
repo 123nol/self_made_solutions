@@ -55,7 +55,7 @@ const Services = () => {
               className="containerserve"
               style={{ width: "100%", overflow: "none" }}
             >
-              <h1>{orderERP.title}</h1>
+              <h1 className="servicetitle">{orderERP.title}</h1>
               <div
                 className={
                   orderERP.order === 1
