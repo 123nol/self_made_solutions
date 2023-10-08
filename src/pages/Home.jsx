@@ -1,6 +1,5 @@
 import React from "react";
-import Services from "./Services";
-import Product from "./Product";
+
 import Contact from "./Contact";
 import { Link } from "react-router-dom";
 import welcomeGif from "../components/images/Welcome_1.gif";
@@ -20,9 +19,6 @@ const Home = () => {
                 <Link className="redirectLink" to="/services">
                   <button>View Services</button>
                 </Link>
-                <Link className="redirectLink" to="/product">
-                  <button>View Products</button>
-                </Link>
               </div>
             </div>
           </div>
@@ -30,12 +26,11 @@ const Home = () => {
             <a style={{ display: "none" }} href="https://storyset.com/people">
               People illustrations by Storyset
             </a>
-            <img src={welcomeGif} alt="" />
+            <img src={welcomeGif} alt="welcome" />
           </div>
         </div>
       </div>
-      <Services />
-      <Product />
+
       <Contact />
     </div>
   );

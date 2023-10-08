@@ -18,9 +18,6 @@ const Product = () => {
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
                 voluptatem mollitia modi impedit perspiciatis cum culpa
-                recusandae soluta eligendi temporibus consectetur ipsum
-                praesentium quas architecto nulla, harum quos distinctio
-                corrupti.
               </p>
             </div>
           </Link>
@@ -32,9 +29,6 @@ const Product = () => {
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
                 voluptatem mollitia modi impedit perspiciatis cum culpa
-                recusandae soluta eligendi temporibus consectetur ipsum
-                praesentium quas architecto nulla, harum quos distinctio
-                corrupti.
               </p>
             </div>
           </Link>
@@ -46,9 +40,6 @@ const Product = () => {
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
                 voluptatem mollitia modi impedit perspiciatis cum culpa
-                recusandae soluta eligendi temporibus consectetur ipsum
-                praesentium quas architecto nulla, harum quos distinctio
-                corrupti.
               </p>
             </div>
           </Link>
@@ -60,9 +51,6 @@ const Product = () => {
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
                 voluptatem mollitia modi impedit perspiciatis cum culpa
-                recusandae soluta eligendi temporibus consectetur ipsum
-                praesentium quas architecto nulla, harum quos distinctio
-                corrupti.
               </p>
             </div>
           </Link>
@@ -74,9 +62,6 @@ const Product = () => {
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
                 voluptatem mollitia modi impedit perspiciatis cum culpa
-                recusandae soluta eligendi temporibus consectetur ipsum
-                praesentium quas architecto nulla, harum quos distinctio
-                corrupti.
               </p>
             </div>
           </Link>
@@ -88,9 +73,6 @@ const Product = () => {
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
                 voluptatem mollitia modi impedit perspiciatis cum culpa
-                recusandae soluta eligendi temporibus consectetur ipsum
-                praesentium quas architecto nulla, harum quos distinctio
-                corrupti.
               </p>
             </div>
           </Link>
@@ -102,9 +84,6 @@ const Product = () => {
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
                 voluptatem mollitia modi impedit perspiciatis cum culpa
-                recusandae soluta eligendi temporibus consectetur ipsum
-                praesentium quas architecto nulla, harum quos distinctio
-                corrupti.
               </p>
             </div>
           </Link>
@@ -116,9 +95,6 @@ const Product = () => {
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
                 voluptatem mollitia modi impedit perspiciatis cum culpa
-                recusandae soluta eligendi temporibus consectetur ipsum
-                praesentium quas architecto nulla, harum quos distinctio
-                corrupti.
               </p>
             </div>
           </Link>
@@ -130,9 +106,6 @@ const Product = () => {
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
                 voluptatem mollitia modi impedit perspiciatis cum culpa
-                recusandae soluta eligendi temporibus consectetur ipsum
-                praesentium quas architecto nulla, harum quos distinctio
-                corrupti.
               </p>
             </div>
           </Link>

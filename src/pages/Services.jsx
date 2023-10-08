@@ -3,6 +3,7 @@ const Services = () => {
   const [orderERP, setOrderERP] = useState({ order: 1, title: "Therapy" });
   const [orderCons, setOrderCons] = useState({ order: 1, title: "Therapy" });
   const [orderDig, setOrderDig] = useState({ order: 1, title: "Therapy" });
+
   return (
     <div className="services">
       <div className="linkHeader">
@@ -15,36 +16,36 @@ const Services = () => {
           <div className="serviceType">
             <div className="serviceInfo">
               <h1>ERP Serivce</h1>
-              <h3>Service Includes</h3>
+              {/* <h3>Service Includes</h3> */}
               <p>
                 <li
-                  onClick={() =>
-                    setOrderERP({ ...orderERP, title: "Therapy", order: 1 })
-                  }
+                  onClick={() => {
+                    setOrderERP({ ...orderERP, title: "Therapy", order: 1 });
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   Therapy
                 </li>
                 <li
-                  onClick={() =>
-                    setOrderERP({ ...orderERP, title: "Cheese", order: 2 })
-                  }
+                  onClick={() => {
+                    setOrderERP({ ...orderERP, title: "Cheese", order: 2 });
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   Cheese
                 </li>
                 <li
-                  onClick={() =>
-                    setOrderERP({ ...orderERP, title: "System", order: 3 })
-                  }
+                  onClick={() => {
+                    setOrderERP({ ...orderERP, title: "System", order: 3 });
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   System
                 </li>
                 <li
-                  onClick={() =>
-                    setOrderERP({ ...orderERP, title: "Management", order: 4 })
-                  }
+                  onClick={() => {
+                    setOrderERP({ ...orderERP, title: "Management", order: 4 });
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   Management
@@ -52,10 +53,9 @@ const Services = () => {
               </p>
             </div>
             <div
-              className="containerserve"
+              className="serviceContainer"
               style={{ width: "100%", overflow: "none" }}
             >
-              <h1 className="servicetitle">{orderERP.title}</h1>
               <div
                 className={
                   orderERP.order === 1
@@ -65,6 +65,7 @@ const Services = () => {
               >
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderERP.title}</h2>
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -88,7 +89,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -102,6 +103,8 @@ const Services = () => {
               >
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderERP.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -125,7 +128,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -139,6 +142,8 @@ const Services = () => {
               >
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderERP.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -162,7 +167,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -176,6 +181,7 @@ const Services = () => {
               >
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderERP.title}</h2>
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -199,7 +205,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -216,7 +222,7 @@ const Services = () => {
           <div className="serviceType">
             <div className="serviceInfo">
               <h1>Consulting</h1>
-              <h3>Service Includes</h3>
+              {/* <h3>Service Includes</h3> */}
               <p>
                 <li
                   onClick={() =>
@@ -256,7 +262,10 @@ const Services = () => {
                 </li>
               </p>
             </div>
-            <div style={{ width: "100%", overflow: "none" }}>
+            <div
+              className="serviceContainer"
+              style={{ width: "100%", overflow: "none" }}
+            >
               <div
                 className={
                   orderCons.order === 1
@@ -264,9 +273,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Therapy</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderCons.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -290,7 +300,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -302,9 +312,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Cheese</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderCons.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -328,7 +339,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -340,9 +351,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>System</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderCons.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -366,7 +378,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -378,9 +390,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Management</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderCons.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -404,7 +417,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -421,7 +434,7 @@ const Services = () => {
           <div className="serviceType">
             <div className="serviceInfo">
               <h1>Digital Marketing</h1>
-              <h3>Service Includes</h3>
+              {/* <h3>Service Includes</h3> */}
               <p>
                 <li
                   onClick={() =>
@@ -473,7 +486,10 @@ const Services = () => {
                 </li>
               </p>
             </div>
-            <div style={{ width: "100%", overflow: "none" }}>
+            <div
+              className="serviceContainer"
+              style={{ width: "100%", overflow: "none" }}
+            >
               <div
                 className={
                   orderDig.order === 1
@@ -481,9 +497,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Therapy</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderDig.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -507,7 +524,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -519,9 +536,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Cheese</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderDig.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -545,7 +563,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -557,9 +575,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>System</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderDig.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -583,7 +602,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -595,9 +614,10 @@ const Services = () => {
                     : "serviceExplanation "
                 }
               >
-                <h1>Management</h1>
                 <div className="serviceExplanationContainer">
                   <div className="serviceText">
+                    <h2>{orderDig.title}</h2>
+
                     <p>
                       1,Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Est deserunt consequatur quasi reprehenderit enim culpa,
@@ -621,7 +641,7 @@ const Services = () => {
                   <div className="serviceImage">
                     <img
                       src="https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Service Image"
+                      alt=""
                     />
                   </div>
                 </div>

@@ -14,7 +14,14 @@ const NavBar = () => {
               <img src={Logo} alt="Selfmade Solutions" />
             </div>
 
+<<<<<<< HEAD
+            <p>
+              Selfmade <br />{" "}
+              <span style={{ fontWeight: "600" }}>Solutions</span>
+            </p>
+=======
             <p>SelfMade <br/> Solutions </p>
+>>>>>>> a99781650a38d9b7e1ca53618ea84bb570262f0a
           </div>
         </NavLink>
       </div>
