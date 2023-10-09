@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "./images/Logo.png";
 const NavBar = () => {
   const [clicked, setClick] = useState(false);
+  const [order, setOrder] = useState(1);
 
   return (
     <div className={clicked ? "bar extend" : "bar"}>
@@ -14,50 +15,65 @@ const NavBar = () => {
               <img src={Logo} alt="Selfmade Solutions" />
             </div>
 
-<<<<<<< HEAD
-            <p>
-              Selfmade <br />{" "}
-              <span style={{ fontWeight: "600" }}>Solutions</span>
-            </p>
-=======
             <p>SelfMade <br/> Solutions </p>
->>>>>>> a99781650a38d9b7e1ca53618ea84bb570262f0a
           </div>
         </NavLink>
       </div>
       <nav id="nav" className={clicked ? "#nav active" : "#nav"}>
-        <NavLink to="/" className="links" onClick={() => setClick(false)}>
-          HOME
-        </NavLink>
+      <NavLink to="/" className={order===1? "links tap": "links"} onClick={() => {
+         
+         setClick(false) 
+         setOrder(1)
+         
+         }}>
+         HOME
+       </NavLink>
 
-        <NavLink
-          to="/services"
-          className="links"
-          onClick={() => setClick(false)}
-        >
-          SERVICES
-        </NavLink>
-        <NavLink
-          to="/product"
-          className="links"
-          onClick={() => setClick(false)}
-        >
-          PRODUCTS
-        </NavLink>
-        <NavLink
-          to="/project"
-          className="links"
-          onClick={() => setClick(false)}
-        >
-          PROJECTS
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className="links"
-          onClick={() => setClick(false)}
-        >
-          CONTACT
-        </NavLink>
+       <NavLink
+         to="/services"
+         className={order===2? "links tap": "links"} onClick={() => {
+        
+           setClick(false) 
+           setOrder(2)
+           
+           }}
+
+       >
+         SERVICES
+       </NavLink>
+       <NavLink
+         to="/product"
+         className={order===3? "links tap": "links"} onClick={() => {
+        
+           setClick(false) 
+           setOrder(3)
+           
+           }}
+       >
+         PRODUCTS
+       </NavLink>
+       <NavLink
+         to="/project"
+         className={order===4? "links tap": "links"} onClick={() => {
+        
+           setClick(false) 
+           setOrder(4)
+           
+           }}
+       >
+         PROJECTS
+       </NavLink>
+       <NavLink
+         to="/contact"
+         className={order===5? "links tap": "links"} onClick={() => {
+        
+           setClick(false) 
+           setOrder(5)
+           
+           }}
+       >
+         CONTACT
+       </NavLink>
       </nav>
 
       <div

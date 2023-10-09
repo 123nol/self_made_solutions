@@ -103,6 +103,23 @@
 .links:hover::after {
   width: 40% !important;
 }
+.links.tap::after{
+  content: "";
+  width: 40% !important;
+  display: inline-block;
+  height: 3px;
+  border-radius: 90px !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(78, 102, 86, 0.619),
+    rgb(130, 130, 47, 0.619)
+  );
+  position: absolute;
+  bottom: 6px;
+  left: 14px;
+  transition: all 0.3s ease-in-out !important;
+  margin: auto;
+}
 
 #nav {
   display: flex;
@@ -411,7 +428,7 @@
   text-align: left;
 }
 .serviceInfo p li:hover {
-  color: rgb(216, 137, 73);
+  color: rgb(216, 137, 73) !important;
 }
 
 .serviceInfo li {
@@ -631,6 +648,23 @@
 
 .productCard:hover .productInfo h1::before {
   background-color: rgb(160, 200, 199);
+}
+.productCard:hover .productInfo{
+  animation-name: pulse;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
+
+
+}
+@keyframes pulse {
+  from{
+    background-color: rgb(194, 192, 192);
+  }
+  to{
+    background-color: white;
+  }
+  
 }
 
 .productCard:hover .productInfo {
@@ -949,7 +983,7 @@
   position: fixed;
   bottom: 50px;
   right: 50px;
-  background-image: linear-gradient(#f0f0f0, #ededd2);
+  background-image: linear-gradient(rgba(147, 153, 118, 0.986), #ededd2);
   border-radius: 100%;
   padding: 20px;
   justify-content: center;
@@ -959,7 +993,11 @@
   animation-name: chat;
   
   animation-duration: 3s;
-  transition: all 0.3s ease-in;
+  transition:  0.3s ease-in;
+  /* animation-name: chatback;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s; */
 
 }
 @keyframes chat{
@@ -973,7 +1011,14 @@
     }
   
 }
-
+@keyframes chatback{
+  from{
+    background-color: linear-gradient(rgb(190, 190, 147) rgb(196, 196, 166));
+  }
+  to{
+    background-color: linear-gradient(#f0f0f0, #ededd2);
+  }
+}
 .input_send {
   display: flex;
   flex-direction: row;
