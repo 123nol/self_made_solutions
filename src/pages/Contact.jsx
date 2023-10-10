@@ -11,7 +11,7 @@ const Contact = () => {
     <div className='allcontacts'>
       <div className='linkHeader'>
         <h1>Contact</h1>
-        <p>Contact Us</p>
+        <p>We’d love to talk about your right-now challenges and share our insights on how to conquer them.</p>
       </div>
       <div className='contacts'>
         <div className='contact' id= "address">

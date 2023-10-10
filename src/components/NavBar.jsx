@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "./images/Logo.png";
 const NavBar = () => {
   const [clicked, setClick] = useState(false);
+  const [order, setOrder] = useState(1);
 
   return (
     <div className={clicked ? "bar extend" : "bar"}>
@@ -15,42 +16,60 @@ const NavBar = () => {
             </div>
 
             <p>
-              Selfmade <br />{" "}
-              <span style={{ fontWeight: "600" }}>Solutions</span>
+              SelfMade <br /> Solutions{" "}
             </p>
           </div>
         </NavLink>
       </div>
       <nav id="nav" className={clicked ? "#nav active" : "#nav"}>
-        <NavLink to="/" className="links" onClick={() => setClick(false)}>
+        <NavLink
+          to="/"
+          className={order === 1 ? "links tap" : "links"}
+          onClick={() => {
+            setClick(false);
+            setOrder(1);
+          }}
+        >
           HOME
         </NavLink>
 
         <NavLink
           to="/services"
-          className="links"
-          onClick={() => setClick(false)}
+          className={order === 2 ? "links tap" : "links"}
+          onClick={() => {
+            setClick(false);
+            setOrder(2);
+          }}
         >
           SERVICES
         </NavLink>
         <NavLink
           to="/product"
-          className="links"
-          onClick={() => setClick(false)}
+          className={order === 3 ? "links tap" : "links"}
+          onClick={() => {
+            setClick(false);
+            setOrder(3);
+          }}
         >
           PRODUCTS
         </NavLink>
         <NavLink
           to="/project"
-          className="links"
-          onClick={() => setClick(false)}
+          className={order === 4 ? "links tap" : "links"}
+          onClick={() => {
+            setClick(false);
+            setOrder(4);
+          }}
         >
           PROJECTS
         </NavLink>
         <NavLink
           to="/contact"
-          className="links"
-          onClick={() => setClick(false)}
+          className={order === 5 ? "links tap" : "links"}
+          onClick={() => {
+            setClick(false);
+            setOrder(5);
+          }}
         >
           CONTACT
         </NavLink>

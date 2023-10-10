@@ -497,7 +497,10 @@ const Services = () => {
                         orderDig.order === 2 ? "rgb(216, 137, 73)" : "black",
                     })
                   }
-                  style={{ cursor: "pointer" }}
+                  style={{
+                    cursor: "pointer",
+                    color: orderDig.order === 2 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   Cheese
                 </li>
@@ -513,7 +516,7 @@ const Services = () => {
                   }
                   style={{
                     cursor: "pointer",
-                    color: orderDig.order === 3 ? "rgb(216, 137, 73)" : "black",
+                    color: orderERP.Dig === 3 ? "rgb(216, 137, 73)" : "black",
                   }}
                 >
                   System

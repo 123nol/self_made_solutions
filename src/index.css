@@ -31,8 +31,12 @@
 
   box-shadow: 0 10px 20px 0px #8187367e;
   background-color: #dfdfbcfe;
+  background-color: #dadab7fe;
   transition: all 0.5s ease-in-out;
   z-index: 100 !important;
+  position: sticky ;
+  top:0;
+  
   display: flex;
   position: sticky;
 
@@ -98,6 +102,23 @@
 
 .links:hover::after {
   width: 40% !important;
+}
+.links.tap::after{
+  content: "";
+  width: 40% !important;
+  display: inline-block;
+  height: 3px;
+  border-radius: 90px !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(78, 102, 86, 0.619),
+    rgb(130, 130, 47, 0.619)
+  );
+  position: absolute;
+  bottom: 6px;
+  left: 14px;
+  transition: all 0.3s ease-in-out !important;
+  margin: auto;
 }
 
 #nav {
@@ -351,6 +372,7 @@
   width: 95%;
   margin: 40px auto;
 }
+
 .serviceList h1 {
   font-weight: 600;
   text-align: left;
@@ -420,7 +442,7 @@
   text-align: left;
 }
 .serviceInfo p li:hover {
-  color: rgb(216, 137, 73);
+  color: rgb(216, 137, 73) !important;
 }
 
 .serviceInfo li {
@@ -641,6 +663,23 @@
 .productCard:hover .productInfo h1::before {
   background-color: rgb(160, 200, 199);
 }
+.productCard:hover .productInfo{
+  animation-name: pulse;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
+
+
+}
+@keyframes pulse {
+  from{
+    background-color: rgb(194, 192, 192);
+  }
+  to{
+    background-color: white;
+  }
+  
+}
 
 .productCard:hover .productInfo {
   height: 50%;
@@ -708,7 +747,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 150px;
   align-items: center;
   padding-top: 80px;
   padding-bottom: 30px;
@@ -813,7 +852,7 @@
   /* padding-right: 30px;
   padding-left: 30px; */
   height: 8vw;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   padding: 30px;
   border-radius: 20px;
   height: fit-content;
@@ -857,11 +896,10 @@
     rgba(238, 215, 11, 0.9)
   );
 }
-/* .form{
-  background: url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
-  background-repeat: repeat;
-  background-size: contain;
-} */
+ .form{
+  width: 60vw;
+  height: 40vh;
+} 
 
 .name_email {
   display: flex;
@@ -959,15 +997,42 @@
   position: fixed;
   bottom: 50px;
   right: 50px;
-  background-image: linear-gradient(#f0f0f0, #ededd2);
+  background-image: linear-gradient(rgba(147, 153, 118, 0.986), #ededd2);
   border-radius: 100%;
   padding: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-}
+  animation-name: chat;
+  
+  animation-duration: 3s;
+  transition:  0.3s ease-in;
+  /* animation-name: chatback;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s; */
 
+}
+@keyframes chat{
+  from{
+    transform: translateY(200%);
+
+  }
+
+    to{
+     transform: translateY(0%);
+    }
+  
+}
+@keyframes chatback{
+  from{
+    background-color: linear-gradient(rgb(190, 190, 147) rgb(196, 196, 166));
+  }
+  to{
+    background-color: linear-gradient(#f0f0f0, #ededd2);
+  }
+}
 .input_send {
   display: flex;
   flex-direction: row;

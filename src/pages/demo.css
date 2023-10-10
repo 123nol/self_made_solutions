@@ -1,0 +1,149 @@
+.demoallcontacts {
+  /* background-color: #ededd2; */
+  display: grid;
+  place-content: center;
+  height: 90vh;
+}
+.demolinkHeader {
+  text-align: center;
+  margin-top: 50px;
+  
+  
+}
+.demolinkHeader::after {
+  content: "";
+  display: inline-block;
+  background-color: rgb(179, 194, 145);
+  height: 2px;
+  width: 10%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.democontacts {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+  width: 100vw;
+  height: 47vh;
+}
+
+.democontact {
+  text-align: justify !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap:10px;
+  /* padding-right: 30px;
+  padding-left: 30px; */
+  height: 8vw;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  padding: 30px;
+  
+  height: 100%;
+  width: 33%;
+  
+  
+}
+.democontact h3 {
+  color: rgba(115, 154, 68, 0.9);
+  font-size: 27px;
+  font-weight: 450;
+}
+.democontact:nth-child(2){
+  background-color: aquamarine;
+}
+.democontact:nth-child(3){
+  background-color: rgb(232, 255, 127);
+}
+
+@media screen and (max-width: 900px) {
+  .democontacts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    padding-left: 20px;
+    gap: 90px;
+  }
+  .democontact {
+    border: none !important;
+    height: fit-content;
+    width: fit-content;
+    padding: 30px;
+  }
+}
+.demoform {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+
+  margin-bottom: 50px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(238, 215, 11, 0.9)
+  );
+}
+ .demoform{
+  width: 60vw;
+  height: 40vh;
+} 
+
+.demoname_email {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 15px;
+}
+.demosubject {
+  width: 100%;
+}
+#demosubject {
+  width: 100%;
+}
+#demoname {
+  width: 50%;
+}
+#demoemailin {
+  width: 50%;
+}
+.demoinput {
+  height: 45px;
+}
+.demomessages {
+  width: 100%;
+  height: 35vh;
+}
+#demomessage {
+  width: 100%;
+  height: 100%;
+}
+.demosubmit {
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(115, 154, 68, 0.9);
+}
+.demoinput {
+  border-radius: 10px;
+  padding: 15px;
+  outline: none;
+  border: 2px solid rgba(115, 154, 68, 0.9);
+  box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.2);
+}
