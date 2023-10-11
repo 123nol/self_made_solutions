@@ -85,6 +85,7 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+
                   </div>
                   <div className="serviceImage">
                     <img
@@ -210,6 +211,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
           <div className="button">
@@ -647,6 +649,9 @@ const Services = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="button">
+            <button>Book a Consulting</button>
           </div>
         </div>
       </div>
