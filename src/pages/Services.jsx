@@ -105,6 +105,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Book a Consulting</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -144,6 +147,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Sign Up for an ERP Service</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -183,6 +189,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Sign Up for an ERP Service</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -221,6 +230,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Sign Up for an ERP Service</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -232,9 +244,9 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="button">
+          {/* <div className="button">
             <button>Sign Up for an ERP Service</button>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="serviceList">
@@ -332,6 +344,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Book a Consulting</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -371,6 +386,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Book a Consulting</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -410,6 +428,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Book a Consulting</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -449,6 +470,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Book a Consulting</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -459,9 +483,6 @@ const Services = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="button">
-            <button>Book a Consulting</button>
           </div>
         </div>
       </div>
