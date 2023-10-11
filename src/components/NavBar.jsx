@@ -15,65 +15,64 @@ const NavBar = () => {
               <img src={Logo} alt="Selfmade Solutions" />
             </div>
 
-            <p>SelfMade <br/> Solutions </p>
+            <p>
+              SelfMade <br /> Solutions{" "}
+            </p>
           </div>
         </NavLink>
       </div>
       <nav id="nav" className={clicked ? "#nav active" : "#nav"}>
-      <NavLink to="/" className={order===1? "links tap": "links"} onClick={() => {
-         
-         setClick(false) 
-         setOrder(1)
-         
-         }}>
-         HOME
-       </NavLink>
+        <NavLink
+          to="/"
+          className={order === 1 ? "links tap" : "links"}
+          onClick={() => {
+            setClick(false);
+            setOrder(1);
+          }}
+        >
+          HOME
+        </NavLink>
 
-       <NavLink
-         to="/services"
-         className={order===2? "links tap": "links"} onClick={() => {
-        
-           setClick(false) 
-           setOrder(2)
-           
-           }}
-
-       >
-         SERVICES
-       </NavLink>
-       <NavLink
-         to="/product"
-         className={order===3? "links tap": "links"} onClick={() => {
-        
-           setClick(false) 
-           setOrder(3)
-           
-           }}
-       >
-         PRODUCTS
-       </NavLink>
-       <NavLink
-         to="/project"
-         className={order===4? "links tap": "links"} onClick={() => {
-        
-           setClick(false) 
-           setOrder(4)
-           
-           }}
-       >
-         PROJECTS
-       </NavLink>
-       <NavLink
-         to="/contact"
-         className={order===5? "links tap": "links"} onClick={() => {
-        
-           setClick(false) 
-           setOrder(5)
-           
-           }}
-       >
-         CONTACT
-       </NavLink>
+        <NavLink
+          to="/services"
+          className={order === 2 ? "links tap" : "links"}
+          onClick={() => {
+            setClick(false);
+            setOrder(2);
+          }}
+        >
+          SERVICES
+        </NavLink>
+        <NavLink
+          to="/product"
+          className={order === 3 ? "links tap" : "links"}
+          onClick={() => {
+            setClick(false);
+            setOrder(3);
+          }}
+        >
+          PRODUCTS
+        </NavLink>
+        <NavLink
+          to="/project"
+          className={order === 4 ? "links tap" : "links"}
+          onClick={() => {
+            setClick(false);
+            setOrder(4);
+          }}
+        >
+          PROJECTS
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={order === 5 ? "links tap" : "links"}
+          onClick={() => {
+            setClick(false);
+            setOrder(5);
+          }}
+        >
+          CONTACT
+        </NavLink>
       </nav>
 
       <div

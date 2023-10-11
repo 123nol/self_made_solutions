@@ -1,6 +1,10 @@
 import { useState } from "react";
 const Services = () => {
-  const [orderERP, setOrderERP] = useState({ order: 1, title: "Therapy" });
+  const [orderERP, setOrderERP] = useState({
+    order: 1,
+    title: "Therapy",
+    color: "red",
+  });
   const [orderCons, setOrderCons] = useState({ order: 1, title: "Therapy" });
   const [orderDig, setOrderDig] = useState({ order: 1, title: "Therapy" });
 
@@ -19,34 +23,50 @@ const Services = () => {
               {/* <h3>Service Includes</h3> */}
               <p>
                 <li
+                  className="serviceNav"
                   onClick={() => {
                     setOrderERP({ ...orderERP, title: "Therapy", order: 1 });
                   }}
-                  style={{ cursor: "pointer", color: orderERP.order===1? "rgb(216, 137, 73)" : "black" }}
+                  style={{
+                    cursor: "pointer",
+                    color: orderERP.order === 1 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   Therapy
                 </li>
                 <li
+                  className="serviceNav"
                   onClick={() => {
                     setOrderERP({ ...orderERP, title: "Cheese", order: 2 });
                   }}
-                  style={{ cursor: "pointer",color: orderERP.order===2? "rgb(216, 137, 73)" : "black" }}
+                  style={{
+                    cursor: "pointer",
+                    color: orderERP.order === 2 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   Cheese
                 </li>
                 <li
+                  className="serviceNav"
                   onClick={() => {
                     setOrderERP({ ...orderERP, title: "System", order: 3 });
                   }}
-                  style={{ cursor: "pointer",color: orderERP.order===3? "rgb(216, 137, 73)" : "black" }}
+                  style={{
+                    cursor: "pointer",
+                    color: orderERP.order === 3 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   System
                 </li>
                 <li
+                  className="serviceNav"
                   onClick={() => {
                     setOrderERP({ ...orderERP, title: "Management", order: 4 });
                   }}
-                  style={{ cursor: "pointer",color: orderERP.order===4? "rgb(216, 137, 73)" : "black" }}
+                  style={{
+                    cursor: "pointer",
+                    color: orderERP.order === 4 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   Management
                 </li>
@@ -85,7 +105,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
-
+                    <div className="button">
+                      <button>Book a Consulting</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -125,6 +147,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Sign Up for an ERP Service</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -164,6 +189,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Sign Up for an ERP Service</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -202,6 +230,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Sign Up for an ERP Service</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -214,9 +245,9 @@ const Services = () => {
 
             </div>
           </div>
-          <div className="button">
+          {/* <div className="button">
             <button>Sign Up for an ERP Service</button>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="serviceList">
@@ -230,7 +261,11 @@ const Services = () => {
                   onClick={() =>
                     setOrderCons({ ...orderCons, title: "Therapy", order: 1 })
                   }
-                  style={{ cursor: "pointer", color: orderCons.order===1? "rgb(216, 137, 73)" : "black" }}
+                  style={{
+                    cursor: "pointer",
+                    color:
+                      orderCons.order === 1 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   Therapy
                 </li>
@@ -238,7 +273,11 @@ const Services = () => {
                   onClick={() =>
                     setOrderCons({ ...orderCons, title: "Cheese", order: 2 })
                   }
-                  style={{ cursor: "pointer", color: orderCons.order===2? "rgb(216, 137, 73)" : "black" }}
+                  style={{
+                    cursor: "pointer",
+                    color:
+                      orderCons.order === 2 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   Cheese
                 </li>
@@ -246,7 +285,11 @@ const Services = () => {
                   onClick={() =>
                     setOrderCons({ ...orderCons, title: "System", order: 3 })
                   }
-                  style={{ cursor: "pointer", color: orderCons.order===3? "rgb(216, 137, 73)" : "black"  }}
+                  style={{
+                    cursor: "pointer",
+                    color:
+                      orderCons.order === 3 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   System
                 </li>
@@ -258,7 +301,11 @@ const Services = () => {
                       order: 4,
                     })
                   }
-                  style={{ cursor: "pointer", color: orderCons.order===4? "rgb(216, 137, 73)" : "black"  }}
+                  style={{
+                    cursor: "pointer",
+                    color:
+                      orderCons.order === 4 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   Management
                 </li>
@@ -298,6 +345,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Book a Consulting</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -337,6 +387,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Book a Consulting</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -376,6 +429,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Book a Consulting</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -415,6 +471,9 @@ const Services = () => {
                       provident ipsum illo, est corrupti et doloribus recusandae
                       non molestiae enim voluptatibus accusantium.
                     </p>
+                    <div className="button">
+                      <button>Book a Consulting</button>
+                    </div>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -425,9 +484,6 @@ const Services = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="button">
-            <button>Book a Consulting</button>
           </div>
         </div>
       </div>
@@ -446,7 +502,10 @@ const Services = () => {
                       order: 1,
                     })
                   }
-                  style={{ cursor: "pointer" ,color: orderDig.order===1? "rgb(216, 137, 73)" : "black" }}
+                  style={{
+                    cursor: "pointer",
+                    color: orderDig.order === 1 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   Therapy
                 </li>
@@ -456,9 +515,14 @@ const Services = () => {
                       ...orderDig,
                       title: "Cheese",
                       order: 2,
+                      color:
+                        orderDig.order === 2 ? "rgb(216, 137, 73)" : "black",
                     })
                   }
-                  style={{ cursor: "pointer",color: orderDig.order===2? "rgb(216, 137, 73)" : "black"  }}
+                  style={{
+                    cursor: "pointer",
+                    color: orderDig.order === 2 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   Cheese
                 </li>
@@ -468,9 +532,14 @@ const Services = () => {
                       ...orderDig,
                       title: "System",
                       order: 3,
+                      color:
+                        orderDig.order === 3 ? "rgb(216, 137, 73)" : "black",
                     })
                   }
-                  style={{ cursor: "pointer" ,color: orderERP.Dig===3? "rgb(216, 137, 73)" : "black" }}
+                  style={{
+                    cursor: "pointer",
+                    color: orderERP.Dig === 3 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   System
                 </li>
@@ -482,7 +551,10 @@ const Services = () => {
                       order: 4,
                     })
                   }
-                  style={{ cursor: "pointer",color: orderDig.order===4? "rgb(216, 137, 73)" : "black"  }}
+                  style={{
+                    cursor: "pointer",
+                    color: orderDig.order === 4 ? "rgb(216, 137, 73)" : "black",
+                  }}
                 >
                   Management
                 </li>
