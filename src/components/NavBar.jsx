@@ -9,7 +9,11 @@ const NavBar = () => {
   return (
     <div className={clicked ? "bar extend" : "bar"}>
       <div className="banner">
-        <NavLink to="/" className="bannerLink links">
+        <NavLink
+          to="/"
+          className="bannerLink links"
+          onClick={() => (setOrder(1), window.scrollTo(0, 0))}
+        >
           <div className="logoContainer">
             <div className="imageContainer">
               <img src={Logo} alt="Selfmade Solutions" />
@@ -28,6 +32,7 @@ const NavBar = () => {
           onClick={() => {
             setClick(false);
             setOrder(1);
+            window.scrollTo(0, 0);
           }}
         >
           HOME
@@ -39,6 +44,7 @@ const NavBar = () => {
           onClick={() => {
             setClick(false);
             setOrder(2);
+            window.scrollTo(0, 0);
           }}
         >
           SERVICES
@@ -49,6 +55,7 @@ const NavBar = () => {
           onClick={() => {
             setClick(false);
             setOrder(3);
+            window.scrollTo(0, 0);
           }}
         >
           PRODUCTS
@@ -59,6 +66,7 @@ const NavBar = () => {
           onClick={() => {
             setClick(false);
             setOrder(4);
+            window.scrollTo(0, 0);
           }}
         >
           PROJECTS
@@ -69,6 +77,7 @@ const NavBar = () => {
           onClick={() => {
             setClick(false);
             setOrder(5);
+            window.scrollTo(0, 0);
           }}
         >
           CONTACT

@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
 
-const ProductCards = ({ data }) => {
+const ServiceCard = ({ data }) => {
   return (
     <div
       className="productCard"
       style={{ backgroundImage: `url(${data.backgroundImage})` }}
     >
-      <Link className="redirectLink" to={data.link}>
+      <Link className="redirectLink" to={"/services"}>
         <div className="productInfo">
-          <h1>{data.title}</h1>
-          <p>{data.details}</p>
+          <h1>{data.header}</h1>
+          <p>{data.information}</p>
         </div>
       </Link>
     </div>
   );
 };
 
-export default ProductCards;
+export default ServiceCard;
