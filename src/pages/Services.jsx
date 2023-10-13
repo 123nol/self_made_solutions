@@ -242,6 +242,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
           {/* <div className="button">
@@ -720,6 +721,9 @@ const Services = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="button">
+            <button>Book a Consulting</button>
           </div>
         </div>
       </div>

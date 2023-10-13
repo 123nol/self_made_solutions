@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Error from "./pages/Error";
 import Product from "./pages/Product";
-import DemoContact from "./pages/DemoContact";
+
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/product" element={<Product />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/demo" element={<DemoContact/>}/>
+          
 
           <Route path="*" element={<Error />} />
         </Route>
