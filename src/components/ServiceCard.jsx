@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { useLayoutEffect } from "react";
 const ServiceCard = ({ data }) => {
   return (
     <div
