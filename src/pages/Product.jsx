@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-
+import ProductCards from "../components/productCards";
+import { ProductData } from "../data/ProductData";
 const Product = () => {
   return (
     <div className="products">
@@ -8,108 +9,9 @@ const Product = () => {
         <p>Some of the Products that we have worked on</p>
       </div>
       <div className="productList">
-        <div className="productCard">
-          <Link
-            className="redirectLink"
-            to={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
-          >
-            <div className="productInfo">
-              <h1>Therapy</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-                voluptatem mollitia modi impedit perspiciatis cum culpa
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div className="productCard">
-          <Link className="redirectLink">
-            <div className="productInfo">
-              <h1>Therapy</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-                voluptatem mollitia modi impedit perspiciatis cum culpa
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div className="productCard">
-          <Link className="redirectLink">
-            <div className="productInfo">
-              <h1>Therapy</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-                voluptatem mollitia modi impedit perspiciatis cum culpa
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div className="productCard">
-          <Link className="redirectLink">
-            <div className="productInfo">
-              <h1>Therapy</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-                voluptatem mollitia modi impedit perspiciatis cum culpa
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div className="productCard">
-          <Link className="redirectLink">
-            <div className="productInfo">
-              <h1>Therapy</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-                voluptatem mollitia modi impedit perspiciatis cum culpa
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div className="productCard">
-          <Link className="redirectLink">
-            <div className="productInfo">
-              <h1>Therapy</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-                voluptatem mollitia modi impedit perspiciatis cum culpa
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div className="productCard">
-          <Link className="redirectLink">
-            <div className="productInfo">
-              <h1>Therapy</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-                voluptatem mollitia modi impedit perspiciatis cum culpa
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div className="productCard">
-          <Link className="redirectLink">
-            <div className="productInfo">
-              <h1>Therapy</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-                voluptatem mollitia modi impedit perspiciatis cum culpa
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div className="productCard">
-          <Link className="redirectLink">
-            <div className="productInfo">
-              <h1>Therapy</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-                voluptatem mollitia modi impedit perspiciatis cum culpa
-              </p>
-            </div>
-          </Link>
-        </div>
+        {ProductData.map((data) => (
+          <ProductCards key={data.id} data={data} />
+        ))}
       </div>
     </div>
   );
