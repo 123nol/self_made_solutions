@@ -3,6 +3,7 @@
   display: grid;
   place-content: center;
   height: 90vh;
+  overflow: hidden;
 }
 .demolinkHeader {
   text-align: center;
@@ -30,6 +31,7 @@
   background-color: blanchedalmond;
   width: 100vw;
   height: 47vh;
+  
 }
 
 .democontact {

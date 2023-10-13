@@ -508,6 +508,7 @@
   width: 240px;
   height: 240px;
   object-fit: cover;
+  border-radius: 0px 0px 20px 20px;
 }
 @media screen and (max-width: 900px) {
   .serviceInfo h1 {
@@ -683,7 +684,7 @@
 }
 .productCard:hover .productInfo {
   animation-name: pulse;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-delay: 1.5s;
 }
