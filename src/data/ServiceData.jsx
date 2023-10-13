@@ -1,57 +1,138 @@
 export const ServiceData = [
   {
     id: 1,
-    title: "Therapy",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis, ",
+    header: "ERP Service",
+    subSections: {
+      one: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      two: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      three: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      four: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+    },
   },
   {
     id: 2,
-    title: "Therapy2",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis, ",
+    header: "Consulting Service",
+    subSections: {
+      one: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      two: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      three: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      four: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+    },
   },
   {
     id: 3,
-    title: "Therapy3",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis, ",
+    header: "Digital Marketing",
+    subSections: {
+      one: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      two: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      three: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      four: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+    },
   },
   {
-    id: 4,
-    title: "Therapy4",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis, ",
-  },
-  {
-    id: 5,
-    title: "Therapy5",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis, ",
-  },
-  {
-    id: 6,
-    title: "Therapy6",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis, ad architecto provident minima, maxime quod, sequi possimus rem neque! Sunt, itaque?",
-  },
-  {
-    id: 7,
-    title: "Therapy7",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis, ad architecto provident minima, maxime quod, sequi possimus rem neque! Sunt, itaque?",
-  },
-  {
-    id: 8,
-    title: "Therapy8",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis, ",
-  },
-  {
-    id: 9,
-    title: "Therapy9",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis, ",
+    id: 1,
+    header: "ERP Service",
+    subSections: {
+      one: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      two: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      three: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+      four: {
+        title: "Therapy",
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
+        image:
+          "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      },
+    },
   },
 ];
-// export default ProductData;
