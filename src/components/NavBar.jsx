@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "./images/Logo.png";
+import { HashLink } from "react-router-hash-link";
+
 const NavBar = () => {
   const [clicked, setClick] = useState(false);
   const [order, setOrder] = useState(1);
@@ -9,7 +11,14 @@ const NavBar = () => {
   return (
     <div className={clicked ? "bar extend" : "bar"}>
       <div className="banner">
-        <NavLink to="/" className="bannerLink links">
+        <NavLink
+          to="/"
+          className="bannerLink links"
+          onClick={() => {
+            setOrder(1);
+            window.scrollTo(0, 0);
+          }}
+        >
           <div className="logoContainer">
             <div className="imageContainer">
               <img src={Logo} alt="Selfmade Solutions" />
@@ -28,6 +37,7 @@ const NavBar = () => {
           onClick={() => {
             setClick(false);
             setOrder(1);
+            window.scrollTo(0, 0);
           }}
         >
           HOME
@@ -39,12 +49,13 @@ const NavBar = () => {
           onClick={() => {
             setClick(false);
             setOrder(2);
+            window.scrollTo(0, 0);
           }}
         >
           SERVICES
         </NavLink>
-        <NavLink
-          to="/product"
+        <HashLink
+          to="/#product"
           className={order === 3 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
@@ -52,13 +63,14 @@ const NavBar = () => {
           }}
         >
           PRODUCTS
-        </NavLink>
+        </HashLink>
         <NavLink
           to="/project"
           className={order === 4 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
             setOrder(4);
+            window.scrollTo(0, 0);
           }}
         >
           PROJECTS
@@ -69,6 +81,7 @@ const NavBar = () => {
           onClick={() => {
             setClick(false);
             setOrder(5);
+            window.scrollTo(0, 0);
           }}
         >
           CONTACT

@@ -1,7 +1,7 @@
 import React from "react";
+import MiniService from "../components/MiniService";
+import Product from "./Product";
 
-import Contact from "./Contact";
-import { Link } from "react-router-dom";
 import welcomeGif from "../components/images/Welcome_1.gif";
 
 const Home = () => {
@@ -16,10 +16,13 @@ const Home = () => {
               </h1>
               <p>Always Striving Excellence</p>
               <div>
-                <Link className="redirectLink" to="/services">
+                <a className="redirectLink" href="#service">
                   <button>View Services</button>
-                </Link>
+                </a>
               </div>
+              <a className="redirectLink" href="#product">
+                <button>View Products</button>
+              </a>
             </div>
           </div>
           <div className="homeChild imageContainer">
@@ -29,9 +32,9 @@ const Home = () => {
             <img src={welcomeGif} alt="welcome" />
           </div>
         </div>
+        <MiniService />
+        <Product />
       </div>
-
-     
     </div>
   );
 };
