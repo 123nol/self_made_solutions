@@ -343,6 +343,12 @@ html {
   scroll-margin-top: 80px;
 }
 .services {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
+    ),
+    url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -734,8 +740,8 @@ html {
 .projects {
   background-image: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
     ),
     url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
 
@@ -852,6 +858,14 @@ html {
     width: 100%;
     padding: 30px;
   }
+}
+.demoallcontacts {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
+    ),
+    url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
 }
 .allcontacts {
   /* background-color: #ededd2; */
