@@ -9,6 +9,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 1
       },
       two: {
         title: "Therapy",
@@ -16,6 +17,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order:2
       },
       three: {
         title: "Therapy",
@@ -23,6 +25,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 3
       },
       four: {
         title: "Therapy",
@@ -30,6 +33,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 4
       },
     },
   },
@@ -43,6 +47,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          order:1
       },
       two: {
         title: "Therapy",
@@ -50,6 +55,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          order:2
       },
       three: {
         title: "Therapy",
@@ -57,6 +63,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 3
       },
       four: {
         title: "Therapy",
@@ -64,6 +71,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 4
       },
     },
   },
@@ -77,6 +85,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order:1
       },
       two: {
         title: "Therapy",
@@ -84,6 +93,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 2
       },
       three: {
         title: "Therapy",
@@ -91,6 +101,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 3
       },
       four: {
         title: "Therapy",
@@ -98,6 +109,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 4
       },
     },
   },
@@ -111,6 +123,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 1
       },
       two: {
         title: "Therapy",
@@ -118,6 +131,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 2
       },
       three: {
         title: "Therapy",
@@ -125,6 +139,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 3
       },
       four: {
         title: "Therapy",
@@ -132,6 +147,7 @@ export const ServiceData = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit tenetur eum voluptatum laudantium a dolorum aperiam corporis",
         image:
           "https://images.pexels.com/photos/15745221/pexels-photo-15745221/free-photo-of-fog-over-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        order: 4
       },
     },
   },
