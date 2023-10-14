@@ -603,7 +603,7 @@ html {
   .footerInfo {
     width: 100%;
     flex: auto;
-  } 
+  }
 }
 #product {
   scroll-margin-top: 80px;
@@ -700,7 +700,7 @@ html {
 }
 @keyframes pulse {
   from {
-    background-color: rgb(194, 192, 192);
+    background-color: rgb(225, 225, 225);
   }
   to {
     background-color: white;
