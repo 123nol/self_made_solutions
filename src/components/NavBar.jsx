@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "./images/Logo.png";
+import { HashLink } from "react-router-hash-link";
+
 const NavBar = () => {
   const [clicked, setClick] = useState(false);
   const [order, setOrder] = useState(1);
@@ -12,7 +14,10 @@ const NavBar = () => {
         <NavLink
           to="/"
           className="bannerLink links"
-          onClick={() => (setOrder(1), window.scrollTo(0, 0))}
+          onClick={() => {
+            setOrder(1);
+            window.scrollTo(0, 0);
+          }}
         >
           <div className="logoContainer">
             <div className="imageContainer">
@@ -49,17 +54,16 @@ const NavBar = () => {
         >
           SERVICES
         </NavLink>
-        <NavLink
-          to="/product"
+        <HashLink
+          to="/#product"
           className={order === 3 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
             setOrder(3);
-            window.scrollTo(0, 0);
           }}
         >
           PRODUCTS
-        </NavLink>
+        </HashLink>
         <NavLink
           to="/project"
           className={order === 4 ? "links tap" : "links"}
