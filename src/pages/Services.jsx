@@ -107,7 +107,7 @@ const Services = () => {
                       non molestiae enim voluptatibus accusantium.
                     </p>
                     <div className="button">
-                      <button>Book a Consulting</button>
+                      <button>Sign up for an ERP Service</button>
                     </div>
                   </div>
                   <div className="serviceImage">
@@ -721,9 +721,6 @@ const Services = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="button">
-            <button>Book a Consulting</button>
           </div>
         </div>
       </div>
