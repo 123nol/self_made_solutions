@@ -1,16 +1,40 @@
 import React from "react";
-import { FaPlay } from "react-icons/fa";
+import MiniService from "../components/MiniService";
+import Product from "./Product";
+
+import welcomeGif from "../components/images/Welcome_1.gif";
+
 const Home = () => {
   return (
-    <div className="home" style={{ height: "100vh" }}>
-      <h1>
-        Welcome to <span>Self Made Solutions</span>
-      </h1>
-      <p>Always Striving Excellence</p>
-      <p className="faPlay">
-        <a href="https://youtube.com">{<FaPlay />}</a>
-        <span></span>
-      </p>
+    <div>
+      <div className="main">
+        <div className="home">
+          <div className="homeChild">
+            <div>
+              <h1>
+                Welcome to <span>Selfmade Solutions</span>
+              </h1>
+              <p>Always Striving Excellence</p>
+              <div>
+                <a className="redirectLink" href="#service">
+                  <button>View Services</button>
+                </a>
+              </div>
+              <a className="redirectLink" href="#product">
+                <button>View Products</button>
+              </a>
+            </div>
+          </div>
+          <div className="homeChild imageContainer">
+            <a style={{ display: "none" }} href="https://storyset.com/people">
+              People illustrations by Storyset
+            </a>
+            <img src={welcomeGif} alt="welcome" />
+          </div>
+        </div>
+        <MiniService />
+        <Product />
+      </div>
     </div>
   );
 };

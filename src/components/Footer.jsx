@@ -1,6 +1,8 @@
 import { FaEnvelope } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import Chat from "../components/Chat.jsx";
 const Footer = () => {
   return (
     <div className="footer">
@@ -22,27 +24,37 @@ const Footer = () => {
           <p>
             <li>
               <AiOutlineRight />
-              Home
+              <Link className="redirectLink" to="/">
+                Home
+              </Link>
             </li>
             <li>
               <AiOutlineRight />
-              About
+              <Link className="redirectLink" to="/about">
+                About
+              </Link>
             </li>
             <li>
               <AiOutlineRight />
-              Services
+              <Link className="redirectLink" to="/services">
+                Services
+              </Link>
             </li>
             <li>
               <AiOutlineRight />
-              Projects
+              <Link className="redirectLink" to="/project">
+                Projects
+              </Link>
             </li>
             <li>
               <AiOutlineRight />
-              Contact
+              <Link className="redirectLink" to="/contact">
+                Contact
+              </Link>
             </li>
           </p>
         </div>
-        <div className="footerInfo">
+        {/* <div className="footerInfo">
           <h1>Affiliates</h1>
           <p>
             <li>
@@ -70,7 +82,7 @@ const Footer = () => {
               Design Rush
             </li>
           </p>
-        </div>
+        </div> */}
         <div className="footerInfo">
           <h1>Contact Us</h1>
           <p>
@@ -95,6 +107,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      
     </div>
   );
 };
