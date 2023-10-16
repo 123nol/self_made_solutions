@@ -43,8 +43,8 @@ const NavBar = (props) => {
           HOME
         </NavLink>
 
-        <NavLink
-          to="/services"
+        <HashLink
+          to="/#service"
           className={props.order === 2 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);

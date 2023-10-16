@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ServiceData } from "../data/ServiceData";
 import ServiceExpCard from "../components/ServiceExpCard";
 const Services = () => {
