@@ -474,10 +474,11 @@ html {
 }
 
 .serviceExplanation {
-  width: 90%;
-  display: none;
+  width: 100%;
+  display: block;
   transition: all 0.3s ease-in-out;
-}
+  
+  
 .serviceExplanation.grow {
   display: block;
   width: 100%;
@@ -491,6 +492,9 @@ html {
 
   gap: 10px;
   justify-content: space-between;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
 }
 @keyframes fadein {
   from {
@@ -503,6 +507,7 @@ html {
 .serviceExplanation .serviceText {
   width: 75%;
   line-height: 2;
+ 
 }
 .serviceText p {
   font-size: 18px;
@@ -515,6 +520,9 @@ html {
 .serviceExplanation .serviceImage {
   width: 270px;
   height: 240px;
+}
+.serviceText .button{
+  margin-top: 40px;
 }
 .serviceExplanation img {
   width: 240px;

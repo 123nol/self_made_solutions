@@ -4,9 +4,9 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "./images/Logo.png";
 import { HashLink } from "react-router-hash-link";
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [clicked, setClick] = useState(false);
-  const [order, setOrder] = useState(1);
+  // const [order, setOrder] = useState(1);
 
   return (
     <div className={clicked ? "bar extend" : "bar"}>
@@ -15,7 +15,7 @@ const NavBar = () => {
           to="/"
           className="bannerLink links"
           onClick={() => {
-            setOrder(1);
+            props.change(1);
             window.scrollTo(0, 0);
           }}
         >
@@ -33,22 +33,22 @@ const NavBar = () => {
       <nav id="nav" className={clicked ? "#nav active" : "#nav"}>
         <NavLink
           to="/"
-          className={order === 1 ? "links tap" : "links"}
+          className={props.order === 1 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
-            setOrder(1);
+            props.change(1);
             window.scrollTo(0, 0);
           }}
         >
           HOME
         </NavLink>
 
-        <HashLink
-          to="/#service"
-          className={order === 2 ? "links tap" : "links"}
+        <NavLink
+          to="/services"
+          className={props.order === 2 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
-            setOrder(2);
+            props.change(2);
             window.scrollTo(0, 0);
           }}
         >
@@ -56,20 +56,20 @@ const NavBar = () => {
         </HashLink>
         <HashLink
           to="/#product"
-          className={order === 3 ? "links tap" : "links"}
+          className={props.order === 3 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
-            setOrder(3);
+            props.change(3);
           }}
         >
           PRODUCTS
         </HashLink>
         <NavLink
           to="/project"
-          className={order === 4 ? "links tap" : "links"}
+          className={props.order === 4 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
-            setOrder(4);
+            props.change(4);
             window.scrollTo(0, 0);
           }}
         >
@@ -77,10 +77,10 @@ const NavBar = () => {
         </NavLink>
         <NavLink
           to="/contact"
-          className={order === 5 ? "links tap" : "links"}
+          className={props.order === 5 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
-            setOrder(5);
+            props.change(5);
             window.scrollTo(0, 0);
           }}
         >

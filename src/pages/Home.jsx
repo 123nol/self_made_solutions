@@ -3,15 +3,31 @@ import MiniService from "../components/MiniService";
 import Product from "./Product";
 
 import welcomeGif from "../components/images/Welcome_1.gif";
+import { useState } from "react";
 
-const Home = () => {
+const Home = (props) => {
+  const [scroll, setScroll]= useState(0)
+  const handleScroll = (event)=>{
+    setScroll(event.currentTarget.scrollTop);
+    if(scroll>120){
+      return props.change(3);
+    }
+    else{
+      return props.change(1);
+    }
+    
+
+    
+  }
+ 
+
   return (
     <div>
-      <div className="main">
+      <div className="main" onScroll={handleScroll} >
         <div className="home">
           <div className="homeChild">
             <div>
-              <h1>
+              <h1 >
                 Welcome to <span>Selfmade Solutions</span>
               </h1>
               <p>Always Striving Excellence</p>
@@ -33,7 +49,9 @@ const Home = () => {
           </div>
         </div>
         <MiniService />
-        <Product />
+        <div  >
+          <Product />
+        </div>
       </div>
     </div>
   );
