@@ -6,7 +6,13 @@ const ServiceCard = ({ data }) => {
       className="productCard"
       style={{ backgroundImage: `url(${data.backgroundImage})` }}
     >
-      <Link className="redirectLink" to={"/services"}>
+      <Link
+        className="redirectLink"
+        to={"/services"}
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         <div className="productInfo">
           <h1>{data.header}</h1>
           <p>{data.information}</p>

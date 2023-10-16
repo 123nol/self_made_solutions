@@ -25,7 +25,7 @@ const NavBar = () => {
             </div>
 
             <p>
-              SelfMade <br /> Solutions{" "}
+              Selfmade <br /> Solutions{" "}
             </p>
           </div>
         </NavLink>
@@ -43,8 +43,8 @@ const NavBar = () => {
           HOME
         </NavLink>
 
-        <NavLink
-          to="/services"
+        <HashLink
+          to="/#service"
           className={order === 2 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
@@ -53,7 +53,7 @@ const NavBar = () => {
           }}
         >
           SERVICES
-        </NavLink>
+        </HashLink>
         <HashLink
           to="/#product"
           className={order === 3 ? "links tap" : "links"}

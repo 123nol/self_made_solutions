@@ -2,7 +2,7 @@ import { FaEnvelope } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import Chat from "../components/Chat.jsx";
+import { HashLink } from "react-router-hash-link";
 const Footer = () => {
   return (
     <div className="footer">
@@ -24,31 +24,56 @@ const Footer = () => {
           <p>
             <li>
               <AiOutlineRight />
-              <Link className="redirectLink" to="/">
+              <Link
+                className="redirectLink"
+                to="/"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+              >
                 Home
               </Link>
             </li>
             <li>
               <AiOutlineRight />
-              <Link className="redirectLink" to="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              <AiOutlineRight />
-              <Link className="redirectLink" to="/services">
+              <HashLink className="redirectLink" to="/#service">
                 Services
-              </Link>
+              </HashLink>
             </li>
             <li>
               <AiOutlineRight />
-              <Link className="redirectLink" to="/project">
+              <HashLink
+                className="redirectLink"
+                to="/#product"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Product
+              </HashLink>
+            </li>
+
+            <li>
+              <AiOutlineRight />
+              <Link
+                className="redirectLink"
+                to="/project"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+              >
                 Projects
               </Link>
             </li>
             <li>
               <AiOutlineRight />
-              <Link className="redirectLink" to="/contact">
+              <Link
+                className="redirectLink"
+                to="/contact"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+              >
                 Contact
               </Link>
             </li>
@@ -107,7 +132,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      
     </div>
   );
 };
