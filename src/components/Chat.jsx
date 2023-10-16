@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { FaComment, FaTimes, FaBars, FaPaperPlane } from "react-icons/fa";
-import Chatimg from "./images/Chat.svg";
+import { FaTimes, FaPaperPlane } from "react-icons/fa";
+import CommentIcon from "@mui/icons-material/Comment";
 
 const Chat = () => {
   const [chat, setChat] = useState("");
   const [open, setOpen] = useState(false);
-  const handleSend = () => {
-    return setChat("");
-  };
+  // const handleSend = () => {
+  //   return setChat("");
+  // };
   return (
-    <div className="chatbox" >
+    <div className="chatbox">
       <div
         className="chat"
         style={{ transform: open ? "translateY(0)" : "translateY(200%)" }}
@@ -44,7 +44,11 @@ const Chat = () => {
           cursor: "pointer",
         }}
       >
-        <img src={Chatimg} alt="" style={{ height: "40px" }} />
+        <CommentIcon
+          htmlColor="rgb(230, 230, 230)"
+          style={{ fontSize: "40px" }}
+        />
+
         <p style={{ fontSize: "14px", color: "white" }}>lets chat</p>
       </div>
     </div>

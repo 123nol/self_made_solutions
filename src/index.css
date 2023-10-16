@@ -588,6 +588,9 @@ html {
 }
 .footerInfo li {
   list-style-type: none;
+  display: flex;
+
+  align-items: center;
 }
 .footerInfo h1::after {
   content: "";
@@ -599,6 +602,9 @@ html {
   margin: auto;
 
   border-radius: 10px;
+}
+.icon {
+  margin-right: 10px;
 }
 @media screen and (max-width: 900px) {
   .footerDetails {
@@ -1037,7 +1043,11 @@ html {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  background-image: linear-gradient(rgba(147, 153, 118, 0.986), #ededd2);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(122, 140, 3),
+    rgb(215, 215, 198)
+  );
   border-radius: 100%;
   padding: 20px;
   justify-content: center;

@@ -1,8 +1,8 @@
-import { FaEnvelope } from "react-icons/fa";
-import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import MailIcon from "@mui/icons-material/Mail";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 const Footer = () => {
   return (
     <div className="footer">
@@ -79,55 +79,29 @@ const Footer = () => {
             </li>
           </p>
         </div>
-        {/* <div className="footerInfo">
-          <h1>Affiliates</h1>
-          <p>
-            <li>
-              <AiOutlineRight />
-              Nebret Property Management
-            </li>
-            <li>
-              <AiOutlineRight />
-              Kasma Coffee
-            </li>
-            <li>
-              <AiOutlineRight />
-              Vital Heart Ethiopia
-            </li>
-            <li>
-              <AiOutlineRight />
-              Vital Heart Tour and Travel
-            </li>
-            <li>
-              <AiOutlineRight />
-              Berana Audiobooks
-            </li>
-            <li>
-              <AiOutlineRight />
-              Design Rush
-            </li>
-          </p>
-        </div> */}
+
         <div className="footerInfo">
           <h1>Contact Us</h1>
           <p>
-            <li>G&B Building 3rd Floor,307 Addis Ababa,</li>
-            <li>Gurd Shola Ethiopia</li>
             <li>
-              <BsFillTelephoneFill />
-              +251 922 825 445
+              G&B Building 3rd Floor 307, Addis Ababa, Gurd Shola Ethiopia
+            </li>
+
+            <li>
+              <LocalPhoneIcon className="icon" />
+              <p> +251 922 825 445</p>
             </li>
             <li>
-              <BsFillTelephoneFill />
-              +251 947 407 806
+              <LocalPhoneIcon className="icon" />
+              <p>+251 947 407 806</p>
             </li>
             <li>
-              <FaEnvelope />
-              earaldtradinginfo@gmail.com
+              <MailIcon className="icon" />
+              <p>earaldtradinginfo@gmail.com</p>
             </li>
             <li>
-              <FaEnvelope />
-              info@earaldtradinget.com
+              <MailIcon className="icon" />
+              <p>info@earaldtradinget.com</p>
             </li>
           </p>
         </div>
