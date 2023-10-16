@@ -88,4 +88,3 @@ export const ProjectData = [
       "currently in development An enterprise resource management system  to control and maintain their real estate developments and sales.The system is designed for office use only using the Laravel     framwork for PHP and Tailwind CSS for the front-end development.",
   },
 ];
-
