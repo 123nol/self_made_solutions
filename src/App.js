@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Error from "./pages/Error";
 import Product from "./pages/Product";
+import SingleServicePage from "./pages/SingleServicePage";
 // import ProductData from "./data/ProductData";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Shared  order= {order} change={order=>setOrder(order)} />}>
           <Route index element={<Home order= {order} change={order=>setOrder(order)}/>} />
+          <Route path="/:serviceID" element={<SingleServicePage/>}/>
 
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
