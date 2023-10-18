@@ -8,7 +8,7 @@ const ServiceCard = ({ data }) => {
     >
       <Link
         className="redirectLink"
-        to={`/services/:${data.id}`}
+        to={`/${data.id}`}
         onClick={() => {
           window.scrollTo(0, 0);
         }}

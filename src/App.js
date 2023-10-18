@@ -16,14 +16,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={<Shared order={order} change={(order) => setOrder(order)} />}
-        >
-          <Route
-            index
-            element={<Home order={order} change={(order) => setOrder(order)} />}
-          />
+        <Route path="/" element={<Shared  order= {order} change={order=>setOrder(order)} />}>
+          <Route index element={<Home order= {order} change={order=>setOrder(order)}/>} />
+          <Route path="/:serviceID" element={<SingleServicePage/>}/>
 
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
