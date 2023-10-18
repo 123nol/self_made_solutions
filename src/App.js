@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Error from "./pages/Error";
 import Product from "./pages/Product";
+import SingleServicePage from "./pages/SingleServicePage";
 // import ProductData from "./data/ProductData";
 
 function App() {
@@ -15,14 +16,20 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Shared  order= {order} change={order=>setOrder(order)} />}>
-          <Route index element={<Home order= {order} change={order=>setOrder(order)}/>} />
+        <Route
+          path="/"
+          element={<Shared order={order} change={(order) => setOrder(order)} />}
+        >
+          <Route
+            index
+            element={<Home order={order} change={(order) => setOrder(order)} />}
+          />
 
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/product" element={<Product />} />
           <Route path="/services" element={<Services />} />
-
+          <Route path="/services/:id" element={<SingleServicePage />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
