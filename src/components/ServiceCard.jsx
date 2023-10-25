@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({ data }) => {
   return (
     <div
-      className="productCard"
+      className="productCard serviceCard"
       style={{ backgroundImage: `url(${data.backgroundImage})` }}
     >
       <Link
