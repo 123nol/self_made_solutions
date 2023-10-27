@@ -53,15 +53,18 @@
   
 }
 .democontact h3 {
-  color: rgba(115, 154, 68, 0.9);
+  /* color: rgba(115, 154, 68, 0.9); */
   font-size: 27px;
   font-weight: 450;
 }
+.democontact:first-child{
+  background-color: #9CBD7B;  
+}
 .democontact:nth-child(2){
-  background-color: aquamarine;
+  background-color: #609C74;
 }
 .democontact:nth-child(3){
-  background-color: rgb(232, 255, 127);
+  background-color: #B5B598;
 }
 
 @media screen and (max-width: 900px) {
