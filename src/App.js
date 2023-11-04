@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import { useState } from "react";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
-import Services from "./pages/Services";
+
 import Error from "./pages/Error";
 import Product from "./pages/Product";
 import SingleServicePage from "./pages/SingleServicePage";
@@ -17,31 +17,33 @@ function App() {
   const [order, setOrder] = useState(1);
   return (
     <>
-    <ParticleBackground/>
-    
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={<Shared order={order} change={(order) => setOrder(order)} />}
-        >
+      <ParticleBackground />
+
+      <BrowserRouter>
+        <Routes>
           <Route
-            index
-            element={<Home order={order} change={(order) => setOrder(order)} />}
-          />
-          <Route path="/:serviceID" element={<SingleServicePage />} />
+            path="/"
+            element={
+              <Shared order={order} change={(order) => setOrder(order)} />
+            }
+          >
+            <Route
+              index
+              element={
+                <Home order={order} change={(order) => setOrder(order)} />
+              }
+            />
+            <Route path="/:serviceID" element={<SingleServicePage />} />
 
-          <Route path="/project" element={<Project />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/services" element={<Services />} />
+            <Route path="/project" element={<Project />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/product" element={<Product />} />
 
-          <Route path="*" element={<Error />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
-    
   );
 }
 
