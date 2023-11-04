@@ -576,7 +576,7 @@ html {
 .footer {
   width: 100%;
   background-color: #dfdfbcfe;
-  padding: 20px ;
+  padding: 20px;
 }
 .footerDetails {
   display: flex;
@@ -646,14 +646,12 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   width: 95%;
   margin: 50px auto;
-  
 }
 
- 
-.serviceCard{
+.serviceCard {
   height: 450px !important;
 }
 .serviceCard:first-child {
@@ -662,7 +660,7 @@ html {
 .serviceCard:nth-child(2) {
   margin-top: 125px;
 }
-.serviceCard:nth-child(3){
+.serviceCard:nth-child(3) {
   margin-top: 50px;
 }
 
@@ -683,7 +681,6 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 .productInfo {
   background-color: white;
@@ -778,10 +775,9 @@ html {
     height: 20%;
   }
 }
-@media screen and (max-width: 2000px) {
+@media screen and (min-width: 1600px) {
   .productList {
     width: 1600px;
-    
   }
   .productCard {
     position: relative;
