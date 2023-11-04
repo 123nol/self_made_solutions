@@ -5,6 +5,9 @@ import Product from "./Product";
 import welcomeGif from "../components/images/Welcome_1.gif";
 import { useState } from "react";
 
+
+
+
 const Home = (props) => {
   const [scroll, setScroll]= useState(0)
   const handleScroll = (event)=>{
@@ -23,7 +26,10 @@ const Home = (props) => {
 
   return (
     <div>
+       
+      
       <div className="main" onScroll={handleScroll} >
+      
         <div className="home">
           <div className="homeChild">
             <div>
@@ -31,14 +37,15 @@ const Home = (props) => {
                 Welcome to <span>Selfmade Solutions</span>
               </h1>
               <p>Always Striving Excellence</p>
-              <div>
+              <div style={{display:"flex", flexDirection:"row", justifyContent:"center", alignItems: "center"}}>
                 <a className="redirectLink" href="#service">
                   <button>View Services</button>
                 </a>
-              </div>
               <a className="redirectLink" href="#product">
                 <button>View Products</button>
               </a>
+              </div>
+              
             </div>
           </div>
           <div className="homeChild imageContainer">

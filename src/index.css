@@ -213,12 +213,12 @@ html {
 .main {
   width: 100%;
 
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.88),
       rgba(255, 255, 255, 0.88)
     ),
-    url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000");
+    url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000"); */
 }
 .home {
   display: flex;
@@ -238,7 +238,7 @@ html {
   height: 600px;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 6px 6px 20px 2px #bdbf5c4f;
+  /* box-shadow: 6px 6px 20px 2px #bdbf5c4f; */
   text-align: center;
   align-items: center;
 }
@@ -576,6 +576,7 @@ html {
 .footer {
   width: 100%;
   background-color: #dfdfbcfe;
+  padding: 20px ;
 }
 .footerDetails {
   display: flex;
@@ -637,6 +638,7 @@ html {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .productList {
@@ -649,11 +651,18 @@ html {
   margin: 50px auto;
   
 }
-.serviceCard:first-child,
-.serviceCard:nth-child(3) {
+
+ 
+.serviceCard{
+  height: 450px !important;
+}
+.serviceCard:first-child {
   margin-top: 0;
 }
 .serviceCard:nth-child(2) {
+  margin-top: 125px;
+}
+.serviceCard:nth-child(3){
   margin-top: 50px;
 }
 
