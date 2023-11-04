@@ -379,12 +379,6 @@ html {
   font-size: 18px;
   font-weight: 400;
 }
-/* .serviceList {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  margin: 40px auto;
-} */
 
 .serviceSection h1 {
   font-weight: 600;
@@ -424,7 +418,7 @@ html {
   width: 100%;
   flex-direction: column;
 }
-.serviceInfo {
+.serviceDetail {
   display: flex;
   width: 100%;
   background-color: #b6be7975;
@@ -432,7 +426,7 @@ html {
   justify-content: flex-start;
   align-items: center;
 }
-.serviceInfo h1 {
+.serviceDetail h1 {
   position: relative;
   float: left;
   background-color: #9bbe7992;
@@ -453,14 +447,14 @@ html {
   margin: -20px;
 } */
 
-.serviceInfo p {
+.serviceDetail p {
   text-align: left;
 }
-.serviceInfo p li:hover {
+.serviceDetail p li:hover {
   color: rgb(216, 137, 73) !important;
 }
 
-.serviceInfo li {
+.serviceDetail li {
   font-size: 18px;
   padding: 20px;
   margin: 10px;
@@ -652,8 +646,19 @@ html {
   margin: 50px auto;
 }
 
+.serviceList:hover .serviceCard {
+  opacity: 0.5;
+  /* filter: blur(3px); */
+}
 .serviceCard {
+  opacity: 1;
   height: 450px !important;
+  transition: 0.5s;
+}
+.serviceCard:hover {
+  opacity: 1 !important;
+  /* filter: blur(0) !important  ; */
+  transform: scale(1.1);
 }
 .serviceCard:first-child {
   margin-top: 0;
@@ -682,6 +687,9 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.serviceInfo h1::after {
+  margin: 10px auto !important;
 }
 .productInfo {
   background-color: white;
@@ -725,6 +733,15 @@ html {
   text-decoration: none;
   color: black;
 }
+.popup {
+  position: absolute;
+  padding: 10px;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  color: black;
+  height: 100%;
+}
 
 .productCard:hover {
   cursor: pointer;
@@ -735,23 +752,10 @@ html {
 .productCard:hover .productInfo h1::before {
   background-color: rgb(160, 200, 199);
 }
-.productCard:hover .productInfo {
-  animation-name: pulse;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  animation-delay: 1.5s;
-}
-@keyframes pulse {
-  from {
-    background-color: rgb(225, 225, 225);
-  }
-  to {
-    background-color: white;
-  }
-}
 
 .productCard:hover .productInfo {
   height: 50%;
+  background-color: #f4f4cb;
 }
 
 @media screen and (max-width: 900px) {
