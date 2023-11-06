@@ -735,7 +735,8 @@ html {
 }
 .popup {
   position: fixed;
-  bottom: 20px;
+  top: 130px;
+  /* bottom: 40px; */
   left: 40px;
 
   padding: 40px;
@@ -743,7 +744,8 @@ html {
   width: 95%;
   margin: auto;
   background-color: white;
-  border: 1px grey solid;
+
+  box-shadow: 0 0px 10px 10px rgb(197, 197, 197);
   color: black;
   height: 610px;
   border-radius: 10px;
@@ -764,6 +766,9 @@ html {
   gap: 20px;
   line-height: 2;
   margin: 30px auto;
+}
+.popup-text iframe {
+  border-radius: 10px;
 }
 .popup-images {
   display: flex;
