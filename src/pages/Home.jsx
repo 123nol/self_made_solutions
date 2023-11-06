@@ -4,6 +4,7 @@ import Product from "./Product";
 
 import welcomeGif from "../components/images/Welcome_1.gif";
 import { useState } from "react";
+import Chat from "../components/Chat";
 
 
 
@@ -59,6 +60,7 @@ const Home = (props) => {
         <div  >
           <Product />
         </div>
+       
       </div>
     </div>
   );

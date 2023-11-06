@@ -5,7 +5,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="foot">
       <div className="footerDetails">
         <div className="footerInfo">
           <h1>Self Made Solutions</h1>

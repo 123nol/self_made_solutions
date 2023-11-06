@@ -45,6 +45,7 @@ const Project = () => {
               <h2>{data.title}</h2>
               <p style={{ fontWeight: "50px", color: "black" }}>
                 {data.details}
+                {data.link && <a href={data.link}>For more info check out the website here</a>}
               </p>
             </div>
           </div>

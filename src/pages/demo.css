@@ -11,6 +11,14 @@
   
   
 }
+.Proexplanation{
+  height:20vh; 
+  font-size:40px; 
+  font-weight: bold;
+  margin-top: 45px;
+  text-align:center;
+  padding:"auto"
+}
 .demolinkHeader::after {
   content: "";
   display: inline-block;
@@ -72,15 +80,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
-    padding-left: 20px;
-    gap: 90px;
+    margin-top: 100px;
+    
+    gap: 0px;
+    height: 60vh;
+    margin-bottom: 50px;
+    background-color: aquamarine;
+   
+    
+    
+
+  }
+  .Proexplanation{
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .demoallcontacts{
+    height: 104vh;
   }
   .democontact {
     border: none !important;
-    height: fit-content;
+    height: 100%;
     width: fit-content;
     padding: 30px;
+    width: 100%;
+    
   }
 }
 .demoform {

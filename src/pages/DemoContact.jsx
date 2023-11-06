@@ -14,8 +14,8 @@ const DemoContact = () => {
         <h1>Contact</h1>
         <p>Reach us</p>
       </div>
-      <div style={{height:"20vh", fontSize:"40px", fontWeight: "bold", marginTop: "45px",textAlign:"center",padding:"auto"}}>
-      We’d love to talk about your right-now challenges<br/> and share our insights on how to conquer them.
+      <div className="Proexplanation">
+      <p>We’d love to talk about your right-now challenges<br/> and share our insights on how to conquer them.</p>
       </div>
       <div className='democontacts'>
         <div className='democontact' id= "demoaddress">

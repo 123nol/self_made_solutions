@@ -620,6 +620,9 @@ html {
 .icon {
   margin-right: 10px;
 }
+.Proexplanation{
+  font-size: 25px ;
+}
 @media screen and (max-width: 900px) {
   .footerDetails {
     width: 90%;
@@ -630,6 +633,14 @@ html {
     width: 100%;
     flex: auto;
   }
+}
+.Proexplanation{
+  height:20vh; 
+  font-size:40px; 
+  font-weight: bold;
+  margin-top: 45px;
+  text-align:center;
+  padding:"auto"
 }
 #product {
   scroll-margin-top: 80px;
@@ -655,7 +666,12 @@ html {
  
 .serviceCard{
   height: 450px !important;
+  transition: all 0.3s ease-in-out;
+  border: 10px red;
+
 }
+
+
 .serviceCard:first-child {
   margin-top: 0;
 }
@@ -689,6 +705,7 @@ html {
   background-color: white;
   position: absolute;
   padding: 10px 2px;
+  
   top: auto;
   bottom: 0;
   left: 0;
