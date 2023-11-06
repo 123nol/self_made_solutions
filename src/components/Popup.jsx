@@ -1,3 +1,5 @@
+import CloseIcon from "@mui/icons-material/Close";
+
 const Popup = (props) => {
   return props.trigger ? (
     <div className="popup">
@@ -8,9 +10,9 @@ const Popup = (props) => {
             props.setTrigger(false);
           }}
         >
-          Close
+          <CloseIcon />
         </button>
-        {props.children}
+        <div className="popup-info">{props.children}</div>
       </div>
     </div>
   ) : (

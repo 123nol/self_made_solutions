@@ -734,15 +734,49 @@ html {
   color: black;
 }
 .popup {
-  position: absolute;
-  padding: 10px;
-  z-index: 100;
-  width: 100%;
-  background-color: white;
-  color: black;
-  height: 100%;
-}
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
 
+  padding: 40px;
+  z-index: 2;
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  border: 1px grey solid;
+  color: black;
+  height: 610px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.popup-inner {
+  display: flex;
+  flex-direction: column;
+}
+.close-btn {
+  border: none;
+  background-color: transparent;
+  display: block;
+  text-align: end;
+}
+.popup-text {
+  display: flex;
+  gap: 20px;
+  line-height: 2;
+  margin: 30px auto;
+}
+.popup-images {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+.popup-images img {
+  border-radius: 10px;
+  width: 420px;
+  height: 200px;
+  object-fit: cover;
+}
 .productCard:hover {
   cursor: pointer;
   box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.2),
