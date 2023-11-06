@@ -9,7 +9,7 @@ const MiniService = () => {
         <p>The Services we provide are mainly concerned with the ERP system.</p>
       </div>
 
-      <div className="productList serviceLists" style={{gap:"70px"}}>
+      <div className="productList serviceList" style={{ gap: "50px" }}>
         {ServiceData.map((data) => (
           <ServiceCard key={data.id} data={data} />
         ))}

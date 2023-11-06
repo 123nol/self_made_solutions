@@ -1,3 +1,4 @@
+import { bottom } from "@popperjs/core";
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ data }) => {
@@ -13,7 +14,10 @@ const ServiceCard = ({ data }) => {
           window.scrollTo(0, 0);
         }}
       >
-        <div className="productInfo">
+        <div
+          className="productInfo serviceInfo"
+          style={{ marginbottom: "100px" }}
+        >
           <h1>{data.header}</h1>
           <p>{data.information}</p>
         </div>

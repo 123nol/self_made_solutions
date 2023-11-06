@@ -278,6 +278,7 @@ html {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 .home .linkHeader::after {
   content: none;
@@ -378,12 +379,6 @@ html {
   font-size: 18px;
   font-weight: 400;
 }
-/* .serviceList {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  margin: 40px auto;
-} */
 
 .serviceSection h1 {
   font-weight: 600;
@@ -423,7 +418,7 @@ html {
   width: 100%;
   flex-direction: column;
 }
-.serviceInfo {
+.serviceDetail {
   display: flex;
   width: 100%;
   background-color: #b6be7975;
@@ -431,7 +426,7 @@ html {
   justify-content: flex-start;
   align-items: center;
 }
-.serviceInfo h1 {
+.serviceDetail h1 {
   position: relative;
   float: left;
   background-color: #9bbe7992;
@@ -452,14 +447,14 @@ html {
   margin: -20px;
 } */
 
-.serviceInfo p {
+.serviceDetail p {
   text-align: left;
 }
-.serviceInfo p li:hover {
+.serviceDetail p li:hover {
   color: rgb(216, 137, 73) !important;
 }
 
-.serviceInfo li {
+.serviceDetail li {
   font-size: 18px;
   padding: 20px;
   margin: 10px;
@@ -576,7 +571,7 @@ html {
 .footer {
   width: 100%;
   background-color: #dfdfbcfe;
-  padding: 20px ;
+  padding: 20px;
 }
 .footerDetails {
   display: flex;
@@ -657,18 +652,24 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   width: 95%;
   margin: 50px auto;
-  
 }
 
- 
-.serviceCard{
+.serviceList:hover .serviceCard {
+  opacity: 0.5;
+  /* filter: blur(3px); */
+}
+.serviceCard {
+  opacity: 1;
   height: 450px !important;
-  transition: all 0.3s ease-in-out;
-  border: 10px red;
-
+  transition: 0.5s;
+}
+.serviceCard:hover {
+  opacity: 1 !important;
+  /* filter: blur(0) !important  ; */
+  transform: scale(1.1);
 }
 
 
@@ -678,7 +679,7 @@ html {
 .serviceCard:nth-child(2) {
   margin-top: 125px;
 }
-.serviceCard:nth-child(3){
+.serviceCard:nth-child(3) {
   margin-top: 50px;
 }
 
@@ -699,7 +700,9 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  
+}
+.serviceInfo h1::after {
+  margin: 10px auto !important;
 }
 .productInfo {
   background-color: white;
@@ -744,7 +747,50 @@ html {
   text-decoration: none;
   color: black;
 }
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
 
+  padding: 40px;
+  z-index: 2;
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  border: 1px grey solid;
+  color: black;
+  height: 610px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.popup-inner {
+  display: flex;
+  flex-direction: column;
+}
+.close-btn {
+  border: none;
+  background-color: transparent;
+  display: block;
+  text-align: end;
+}
+.popup-text {
+  display: flex;
+  gap: 20px;
+  line-height: 2;
+  margin: 30px auto;
+}
+.popup-images {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+.popup-images img {
+  border-radius: 10px;
+  width: 420px;
+  height: 200px;
+  object-fit: cover;
+}
 .productCard:hover {
   cursor: pointer;
   box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.2),
@@ -754,23 +800,10 @@ html {
 .productCard:hover .productInfo h1::before {
   background-color: rgb(160, 200, 199);
 }
-.productCard:hover .productInfo {
-  animation-name: pulse;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  animation-delay: 1.5s;
-}
-@keyframes pulse {
-  from {
-    background-color: rgb(225, 225, 225);
-  }
-  to {
-    background-color: white;
-  }
-}
 
 .productCard:hover .productInfo {
   height: 50%;
+  background-color: #f4f4cb;
 }
 
 @media screen and (max-width: 900px) {
@@ -795,10 +828,9 @@ html {
     height: 20%;
   }
 }
-@media screen and (max-width: 2000px) {
+@media screen and (min-width: 1600px) {
   .productList {
     width: 1600px;
-    
   }
   .productCard {
     position: relative;

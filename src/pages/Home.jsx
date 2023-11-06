@@ -6,47 +6,42 @@ import welcomeGif from "../components/images/Welcome_1.gif";
 import { useState } from "react";
 import Chat from "../components/Chat";
 
-
-
-
 const Home = (props) => {
-  const [scroll, setScroll]= useState(0)
-  const handleScroll = (event)=>{
+  const [scroll, setScroll] = useState(0);
+  const handleScroll = (event) => {
     setScroll(event.currentTarget.scrollTop);
-    if(scroll>120){
+    if (scroll > 120) {
       return props.change(3);
-    }
-    else{
+    } else {
       return props.change(1);
     }
-    
-
-    
-  }
- 
+  };
 
   return (
     <div>
-       
-      
-      <div className="main" onScroll={handleScroll} >
-      
+      <div className="main" onScroll={handleScroll}>
         <div className="home">
           <div className="homeChild">
             <div>
-              <h1 >
+              <h1>
                 Welcome to <span>Selfmade Solutions</span>
               </h1>
               <p>Always Striving Excellence</p>
-              <div style={{display:"flex", flexDirection:"row", justifyContent:"center", alignItems: "center"}}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
                 <a className="redirectLink" href="#service">
                   <button>View Services</button>
                 </a>
-              <a className="redirectLink" href="#product">
-                <button>View Products</button>
-              </a>
+                <a className="redirectLink" href="#product">
+                  <button>View Products</button>
+                </a>
               </div>
-              
             </div>
           </div>
           <div className="homeChild imageContainer">
@@ -57,7 +52,7 @@ const Home = (props) => {
           </div>
         </div>
         <MiniService />
-        <div  >
+        <div>
           <Product />
         </div>
        

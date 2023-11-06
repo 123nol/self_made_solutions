@@ -22,7 +22,7 @@ const SingleServicePage = () => {
     >
       <div className="serviceSection">
         <div className="serviceType">
-          <div className="serviceInfo">
+          <div className="serviceDetail">
             <h1>{Main.header}</h1>
             {/* <h3>Service Includes</h3> */}
             <p>
