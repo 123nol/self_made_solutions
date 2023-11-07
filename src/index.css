@@ -212,6 +212,7 @@ html {
 }
 .main {
   width: 100%;
+  position: relative;
 
   /* background-image: linear-gradient(
       to bottom,
@@ -219,6 +220,9 @@ html {
       rgba(255, 255, 255, 0.88)
     ),
     url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000"); */
+    
+    
+   
 }
 .home {
   display: flex;
@@ -615,9 +619,6 @@ html {
 .icon {
   margin-right: 10px;
 }
-.Proexplanation{
-  font-size: 25px ;
-}
 @media screen and (max-width: 900px) {
   .footerDetails {
     width: 90%;
@@ -628,14 +629,6 @@ html {
     width: 100%;
     flex: auto;
   }
-}
-.Proexplanation{
-  height:20vh; 
-  font-size:40px; 
-  font-weight: bold;
-  margin-top: 45px;
-  text-align:center;
-  padding:"auto"
 }
 #product {
   scroll-margin-top: 80px;
@@ -671,8 +664,6 @@ html {
   /* filter: blur(0) !important  ; */
   transform: scale(1.1);
 }
-
-
 .serviceCard:first-child {
   margin-top: 0;
 }
@@ -708,7 +699,6 @@ html {
   background-color: white;
   position: absolute;
   padding: 10px 2px;
-  
   top: auto;
   bottom: 0;
   left: 0;
@@ -761,7 +751,7 @@ html {
 
   box-shadow: 0 0px 10px 10px rgb(197, 197, 197);
   color: black;
-  height: 610px;
+  height: 80%;
   border-radius: 10px;
   overflow-y: scroll;
 }
