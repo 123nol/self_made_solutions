@@ -12,14 +12,7 @@ const SingleServicePage = () => {
     (selected) => selected.order === orderERP
   );
   return (
-    <div
-      style={{
-        display: "grid",
-        placeItems: "center",
-        height: "90vh",
-        overflow: "hidden",
-      }}
-    >
+    <div className="service-main">
       <div className="serviceSection">
         <div className="serviceType">
           <div className="serviceDetail">

@@ -10,8 +10,8 @@ const ProductCards = ({ data }) => {
         <section className="popup-text">
           <div>
             <iframe
-              width="500"
-              height="300"
+              // width="500"
+              // height="300"
               src={data.videoLink}
               title="video"
             ></iframe>
