@@ -6,7 +6,7 @@ const DemoContact = () => {
 
   return (
     <div className='demoallcontacts'>
-      <div className='demolinkHeader'>
+      <div className='linkHeader' style={{marginTop:"0px"}}>
         <h1>Contact</h1>
         <p>Reach us</p>
       </div>
