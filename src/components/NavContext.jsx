@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import { useContext } from "react";
+
 import { useState } from "react";
 export const NavContext = createContext();
 

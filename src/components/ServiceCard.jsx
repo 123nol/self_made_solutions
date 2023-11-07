@@ -1,4 +1,4 @@
-import { bottom } from "@popperjs/core";
+
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ data }) => {

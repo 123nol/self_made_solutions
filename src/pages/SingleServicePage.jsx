@@ -57,7 +57,7 @@ const SingleServicePage = () => {
                   <div className="button">
                     <button
                       style={{
-                        display: Main.button == "" ? "none" : "inline-block",
+                        display: Main.button === "" ? "none" : "inline-block",
                       }}
                     >
                       {Main.button}

@@ -1,11 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
+
 import "./demo.css";
 const DemoContact = () => {
-  const [name, setName]= useState("")
-  const [email, setEmail]= useState("")
-  const [subject, setSubject]= useState("")
-  const [message, setMessage]= useState("")
   
 
   return (
