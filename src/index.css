@@ -224,9 +224,6 @@ html {
       rgba(255, 255, 255, 0.88)
     ),
     url("https://img.freepik.com/premium-vector/line-dot-pattern-background_103740-966.jpg?w=2000"); */
-    
-    
-   
 }
 .home {
   display: flex;
@@ -392,7 +389,12 @@ html {
   font-weight: 600;
   text-align: left;
 }
+.service-main {
+  display: grid;
 
+  height: 90vh;
+  overflow: hidden;
+}
 .serviceSection {
   width: 95%;
 
@@ -535,40 +537,35 @@ html {
   border-radius: 0px 0px 20px 20px;
 }
 @media screen and (max-width: 900px) {
+  .service-main {
+    height: fit-content;
+  }
+
   .serviceContainer {
     width: 100%;
     padding: 20px;
   }
-  .serviceInfo h1 {
-    text-align: center;
-    font-size: 20px;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 0px;
+  .serviceDetail {
+    flex-direction: column;
+  }
+  .serviceDetail h1 {
+    position: relative;
     background-color: transparent;
-  }
-  .serviceInfo li {
-    font-size: 16px;
     padding: 10px;
-    margin: 1px;
-    /* list-style-type: circle; */
-    display: inline-block;
+    border-radius: 0;
+    text-align: center;
   }
-  .serviceType {
-    flex-direction: column;
+  .serviceDetail p {
+    display: flex;
+    justify-content: space-between;
   }
-  .serviceInfo {
-    width: 100%;
-    flex-direction: column;
-    background-color: #b6be7975;
-    padding: 50px;
+  .serviceDetail p li {
+    padding: 10px;
   }
 
   .serviceExplanationContainer {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: space-between;
+    flex-direction: column-reverse;
   }
   .serviceExplanation .serviceImage {
     width: 100%;
@@ -781,7 +778,10 @@ html {
 }
 .popup-text iframe {
   border-radius: 10px;
+  width: 500px;
+  height: 300px;
 }
+
 .popup-images {
   display: flex;
   flex-direction: row;
@@ -810,12 +810,19 @@ html {
 }
 
 @media screen and (max-width: 900px) {
+  .serviceCard {
+    height: 380px !important;
+  }
+  .serviceInfo h1 {
+    margin: 10px auto !important;
+  }
   .productList {
     flex-direction: column;
   }
   .productCard {
     position: relative;
     width: 100%;
+    margin: auto;
   }
   .productCard:nth-child(2) {
     margin-top: 0;
@@ -829,6 +836,31 @@ html {
     left: 0;
     width: 100%;
     height: 20%;
+  }
+  .popup {
+    position: fixed;
+    top: 130px;
+    left: 10px;
+  }
+  .popup-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popup-text {
+    flex-direction: column;
+    width: 100%;
+  }
+  .popup-text iframe {
+    width: 100%;
+    height: auto;
+  }
+  .popup-images {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .popup-images img {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1600px) {
