@@ -651,19 +651,23 @@ html {
 }
 
 .serviceList:hover .serviceCard {
-  opacity: 0.5;
-  /* filter: blur(3px); */
+  filter: grayscale();
+
+  /* opacity: 0.8; */
 }
 .serviceCard {
-  opacity: 1;
+  /* opacity: 1; */
+  filter: none;
   height: 450px !important;
   transition: 0.5s;
 }
 .serviceCard:hover {
-  opacity: 1 !important;
-  /* filter: blur(0) !important  ; */
+  /* opacity: 1 !important; */
+  filter: none !important;
+
   transform: scale(1.1);
 }
+
 .serviceCard:first-child {
   margin-top: 0;
 }
