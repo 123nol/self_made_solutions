@@ -9,12 +9,7 @@ const ProductCards = ({ data }) => {
         <h3 style={{ fontSize: "35px" }}>{data.title}</h3>
         <section className="popup-text">
           <div>
-            <iframe
-              // width="500"
-              // height="300"
-              src={data.videoLink}
-              title="video"
-            ></iframe>
+            <iframe src={data.videoLink} title="video"></iframe>
           </div>
 
           <p>{data.details}</p>

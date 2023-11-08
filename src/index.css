@@ -859,6 +859,15 @@ html {
     width: 100%;
   }
 }
+@media screen and (max-width: 400px) {
+  .linkHeader p {
+    width: 95%;
+    margin: auto;
+  }
+  .productCard h1 {
+    font-size: 24px;
+  }
+}
 @media screen and (min-width: 1600px) {
   .productList {
     width: 1600px;
