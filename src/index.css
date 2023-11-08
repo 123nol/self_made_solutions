@@ -153,7 +153,7 @@ html {
 
     transition: 0.5s;
   }
-  .links.tap::after{
+  .links.tap::after {
     content: "";
     width: 12% !important;
     left: 43% !important;
@@ -567,6 +567,17 @@ html {
     display: flex;
     flex-direction: column-reverse;
   }
+  .serviceText h2 {
+    text-align: center;
+  }
+  .serviceText h2::after {
+    content: "";
+    display: block;
+    background-color: #b6be79;
+    height: 2px;
+    width: 50%;
+    margin: 5px auto;
+  }
   .serviceExplanation .serviceImage {
     width: 100%;
     height: auto;
@@ -845,6 +856,7 @@ html {
   .popup-info {
     display: flex;
     flex-direction: column;
+    text-align: center !important;
   }
 
   .popup-text {
