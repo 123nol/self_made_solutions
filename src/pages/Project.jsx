@@ -39,7 +39,7 @@ const Project = () => {
       </div>
       <div className="prolists">
         {ProjectData.map((data) => (
-          <div className="prolist">
+          <div className="prolist" style={{height:"fit-content"}}>
             <img src={data.image} alt="" />
             <div className="listinfo">
               <h2>{data.title}</h2>

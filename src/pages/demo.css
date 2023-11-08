@@ -1,7 +1,7 @@
 .demoallcontacts {
   /* background-color: #ededd2; */
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
   height: 90vh;
   overflow: hidden;
 }
@@ -81,15 +81,51 @@
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+
     
     gap: 0px;
-    height: 60vh;
+    height: fit-content;
     margin-bottom: 50px;
     background-color: aquamarine;
    
     
     
 
+  }
+  @media screen and (max-width: 400px) {
+    .democontacts {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  
+      
+      gap: 0px;
+      height: 20vh;
+      margin-bottom: 50px;
+      background-color: aquamarine;
+      margin-top: 88px;
+      
+     
+      
+      
+  
+    }
+    .Proexplanation{
+      font-size: 17px !important;
+      padding-left: 22px !important;
+      padding-right: 22px !important;
+      margin-bottom: 90px;
+
+     
+
+    }
+    .demolinkHeader {
+     
+      margin-top: 10px;
+      
+      
+    }
   }
   .Proexplanation{
     font-size: 30px;
