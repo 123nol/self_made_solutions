@@ -1171,7 +1171,21 @@ html {
   z-index: 1000;
   border-radius: 20px;
 }
+@media screen and (max-width:400px){
+  .commentIcon{
+    font-size: 25px !important;
+    
 
+  }
+  .chatline{
+    font-size: 8px !important;
+  }
+  .comment{
+    width: fit-content;
+    bottom: 10px !important;
+    right: 10px !important;
+  }
+}
 .header {
   padding: 20px 25px 0px 25px !important;
   display: flex;
@@ -1216,7 +1230,7 @@ html {
   display: flex;
   flex-direction: column;
   animation-name: chat;
-
+  
   animation-duration: 3s;
   transition: 0.3s ease-in;
   /* animation-name: chatback;

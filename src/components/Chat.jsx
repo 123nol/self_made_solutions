@@ -47,9 +47,10 @@ const Chat = () => {
         <CommentIcon
           htmlColor="rgb(230, 230, 230)"
           style={{ fontSize: "40px" }}
+          className="commentIcon"
         />
 
-        <p style={{ fontSize: "14px", color: "white" }}>lets chat</p>
+        <p style={{ fontSize: "14px", color: "white" }} className="chatline">lets chat</p>
       </div>
     </div>
   );
