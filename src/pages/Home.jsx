@@ -18,7 +18,7 @@ const Home = (props) => {
 
   return (
     <div>
-      {/* <ParticleBackground /> */}
+      <ParticleBackground />
 
       <div className="main" onScroll={handleScroll}>
         <div className="home">

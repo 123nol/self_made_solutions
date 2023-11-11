@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Product from "./pages/Product";
 import SingleServicePage from "./pages/SingleServicePage";
-import ParticleBackground from "./components/ParticleBackground";
+// import ParticleBackground from "./components/ParticleBackground";
 
 // import ProductData from "./data/ProductData";
 

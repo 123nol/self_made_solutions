@@ -1,7 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
 import { ProjectData } from "../data/ProjectData";
-import ParticleBackground from "../components/ParticleBackground";
+
+// import ParticleBackground from "../components/ParticleBackground";
 const Project = () => {
   useEffect(() => {
     const projects = document.querySelectorAll(".prolist");
@@ -33,7 +34,12 @@ const Project = () => {
   }, []);
 
   return (
-    <div className="projects">
+    <>
+    
+    {/* <ParticleBackground style={{zIndex:"0"}}/> */}
+    
+    <div className="projects" style={{zIndex:"1"}}>
+      
       <div className="linkHeader">
         <h1>Projects</h1>
         <p>Some of the projects we have worked on</p>
@@ -57,6 +63,7 @@ const Project = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
