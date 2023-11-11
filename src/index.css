@@ -586,6 +586,7 @@ html {
 
 .footer {
   width: 100%;
+  z-index: 100 !important;
   background-color: #dfdfbcfe;
   padding: 20px;
 }
@@ -1171,16 +1172,14 @@ html {
   z-index: 1000;
   border-radius: 20px;
 }
-@media screen and (max-width:400px){
-  .commentIcon{
+@media screen and (max-width: 400px) {
+  .commentIcon {
     font-size: 25px !important;
-    
-
   }
-  .chatline{
+  .chatline {
     font-size: 8px !important;
   }
-  .comment{
+  .comment {
     width: fit-content;
     bottom: 10px !important;
     right: 10px !important;
@@ -1230,7 +1229,7 @@ html {
   display: flex;
   flex-direction: column;
   animation-name: chat;
-  
+
   animation-duration: 3s;
   transition: 0.3s ease-in;
   /* animation-name: chatback;

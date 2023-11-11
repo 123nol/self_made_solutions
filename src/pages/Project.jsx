@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { ProjectData } from "../data/ProjectData";
+import ParticleBackground from "../components/ParticleBackground";
 const Project = () => {
   useEffect(() => {
     const projects = document.querySelectorAll(".prolist");
@@ -39,13 +40,17 @@ const Project = () => {
       </div>
       <div className="prolists">
         {ProjectData.map((data) => (
-          <div className="prolist" style={{height:"fit-content"}}>
+          <div className="prolist" style={{ height: "fit-content" }}>
             <img src={data.image} alt="" />
             <div className="listinfo">
               <h2>{data.title}</h2>
               <p style={{ fontWeight: "50px", color: "black" }}>
                 {data.details}
-                {data.link && <a href={data.link}>For more info check out the website here</a>}
+                {data.link && (
+                  <a href={data.link}>
+                    For more info check out the website here
+                  </a>
+                )}
               </p>
             </div>
           </div>

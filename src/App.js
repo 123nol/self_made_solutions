@@ -17,7 +17,6 @@ function App() {
   const [order, setOrder] = useState(1);
   return (
     <>
-      <ParticleBackground />
       <BrowserRouter>
         <Routes>
           <Route
