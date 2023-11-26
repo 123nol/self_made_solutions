@@ -1,7 +1,7 @@
 import React from "react";
 import MiniService from "../components/MiniService";
 import Product from "./Product";
-import ParticleBackground from "../components/ParticleBackground";
+// import ParticleBackground from "../components/ParticleBackground";
 import welcomeGif from "../components/images/Welcome_1.gif";
 import { useState } from "react";
 
